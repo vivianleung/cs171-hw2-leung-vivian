@@ -40,6 +40,17 @@
   </form>
 <script>
 
+// I chose the programming-life repository because I'm very interested in computational biology and it's a super-cool way of visually communicating biology!  ^_^ 
+
+// http://sleeplessbyte.github.io/programming-life/
+// https://github.com/SleeplessByte/programming-life
+ 
+
+var branches = d3.json("https://api.github.com/repos/SleeplessByte/programming-life/branches")
+
+for branch in branches:
+  console.log(branch["commit"]["sha"])
+
 var width = 900,
     height = 700;
 
@@ -201,6 +212,11 @@ node.append("circle")
     .attr("r", 5)
 
 force_layout();
+
+
+
+
+
 
 </script>
 </body>
