@@ -37,11 +37,7 @@
   </form>
 <script>
 
-// I chose the programming-life repository because I'm very interested in computational biology and it's a super-cool way of visually communicating biology!  ^_^ 
 
-// http://sleeplessbyte.github.io/programming-life/
-// https://github.com/SleeplessByte/programming-life
- 
 // CONSTANTS
 var width = 900,
     height = 700;
@@ -71,66 +67,21 @@ The second scale should use time scales, where the position reflects absolute ti
 
     var graph = {nodes:[], links:[]};
 
-    // POPULATING GRAPH DATA STRUCTURE!
-    // for each subarray/branch  and for each element
-    COMMITDATA.forEach( function(subarray) {
-      subarray.forEach( function(eL) {
+    graph.nodes = d3.range(nb_nodes).map(function() { 
+    	var result = Math.floor(nb_cat*Math.random());
+        return { cat:result }; 
+        })
 
-        // helper function to push data to respective arrays
-        var pushElData = function(key, coffee, arr) {
-          var obj = {};
-          obj[key] = coffee;
-          return arr.push(obj);
-        };
+    console.log(graph.nodes, graph.links);
 
-        //  modify attributes that may clash w layout
-        var modKeys = ['author', 'committer'];
-        var attrs = ["type", "id"];
-        for (var i = 0; i < modKeys.length; i++){ var k = modKeys[i];
-          for (var j = 0; j < attrs.length; j++) { var a = attrs[j];
-            eL[k][k+"_"+a] = eL[k][a];
-            delete eL[k][a];
-          }
-        }
+      graph.nodes.map(function(d, i) {
 
-        // populates graph.links with parents data
-        if (eL.parents == 'undefined' || $.isEmptyObject(eL.parents) ) 
-          { eL.parents = {"html_url": null, "sha": null, "url": null }; }
-        var pData = { "parents": eL.parents, "sha": eL.sha };
-        graph.links.push(pData);
+        graph.nodes.map(function(e, j) {
+          if(Math.random()>.99 && i!=j)
+            graph.links.push({"source": i, "target": j})
 
-        // POPULATE GRAPH.NODES with the other metadata
-        var eLNode = {};
-        for (var key in eL) { eLNode[key] = eL[key]; }
-        graph.nodes.push(eLNode);
-      });
-    });
-
-    console.log(graph.nodes, "\n", graph.links);
-
-    var Index = function(d) { return d.sha; };
-    var Time = function(d) { return d.commit.committer.date; };
-
-    iScale.domain(graph.nodes.map( Index ));
-    tScale.domain(graph.nodes.map( Time ));
-
-    var scaleBy = 'None';
-      graph.nodes = d3.range(nb_nodes).map(function(d) {  
-        var dScaled;
-        if (scaleBy == 'time') { dScaled = tScale( function() { return Time(d) }) ;}
-        else { dScaled = iScale( function() { return Index(d)} ); }
-        return { cat:Math.floor(nb_cat*dScaled) }; 
+        })
       })
-
-    graph.nodes.map(function(d, i) {
-
-      graph.nodes.map(function(e, j) {
-        console.log("d", d, "i", i, "e", e, "j", j);
-        if(Math.random()>.99 && i!=j)
-          graph.links.push({"source": i, "target": j})
-
-      })
-    })
 
         // Generate the force layout
         var force = d3.layout.force()

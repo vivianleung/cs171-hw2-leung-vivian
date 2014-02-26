@@ -16,7 +16,7 @@
 <body>
 <h1>Problem 1 Answers</h1>
 
-<h2>Questions</h2>
+<h2>Questions</h2> 	
 
 <p>For each visualization...
 	(fb709d8182fa887ceacc927343ba96c9b7a2b739 )
