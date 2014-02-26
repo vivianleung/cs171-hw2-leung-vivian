@@ -20,7 +20,9 @@
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="testcommit_plife.js"></script>
   <form>
   Layout:
     <label><input type="radio" name="layout" value="force" checked> Force</label>
@@ -53,16 +55,16 @@ var width = 900,
     nb_cat = 10;
     repo = 'https://fa8be61e0851e97e73e73768a263e1890fddf197@api.github.com/repos/SleeplessByte/programming-life/';
 
+var tScale = d3.scale.linear().range([0, width]);
+var iScale = d3.scale.ordinal().rangeRoundBands([0, height], .8, 0);
+
 
 // test repo
 /*var repo = "https://api.github.com/repos/BIOFAB/ClothoBiofabEdition/";
 */
 
 // retrieves information on all branches of repo
-d3.json(repo + 'branches', function(error, branches) {
 
-  if (error) { console.log(error); }
-  else { 
 
     var svg = d3.select("body").append("svg")
             .attr("width", width)
@@ -72,40 +74,71 @@ d3.json(repo + 'branches', function(error, branches) {
 
     var graph = {nodes:[], links:[]};
 
-    // prepares queue for synchronous commit data retrieval
-    var q = queue();
+    var elcounter = 0;
+    var orphanCounter = 0;
+    var keycounter = 0;
+    var ownpropertyCounter = 0;
 
 
-    // helper function to get commit data for a given sha
-    var getComs = function(sha, whatsup) {
-      d3.json(repo+"commits?sha="+sha, function(d) { whatsup(null, d); }); } ;
+    // POPULATING GRAPH DATA STRUCTURE!
+    // for each subarray/branch  and for each element
+    COMMITDATA.forEach( function(subarray) {
+      subarray.forEach( function(el) {
 
-    // for each branch, get commit data -- task added by .defer() to queue q
-    branches.forEach( function(d) { 
-      q.defer(getComs, d["commit"]["sha"]); }); 
-  
-    // waits for returns from all tasks
-    q.awaitAll(function(error, cData) { 
+        var pushElData = function(key, value, arr) {
+          var obj = {};
+          obj[key] = value[0];
+          return arr.push(obj);
+        };
 
-      if (error) {console.log(error);}
+        // helper function to modify attributes that may clash
+        function modifyAttr (objs, k) {
+          var attrs = ["type", "id"];
+          for (var i = 0; i < objs.length; i++)
+          {
+            var obj = objs[i];
+            for (var j = 0; j < attrs.length; j++) {
+              obj[k][k + "_" + attrs[j]] = obj[k][attrs[j]];
+              delete obj[k][attrs[j]];
+            }
+          }
+        }
 
-      // SUCCESSS!
-      else { 
-        console.log(cData)
-        // populate graph data structure nodes and links
-        cData.forEach( function(subarray) {
-          console.log("subarray ", subarray);
-        })
+        var elNode = [];
+        var hasParents = false;
+        var eSha = el.sha;
+        modifyAttr(el, ['author', 'committer']);
+
+        if (el.parents == undefined || el.parents == [] ) {
+          var value = {}; 
+          value = [{"html_url": null, "sha": null, "url": null}];
+          pushElData(eSha, value, graph.links);
+        }
+        else {
+          pushElData(eSha, el.parents, graph.links);
+        }
 
 
+        // for each attribute in an element
+        for (var key in el) {
 
+          // in cases where element has inherited properties 
+          if (el.hasOwnProperty(key)) {
+            if (key == 'parents' && el.parents == ) {
+              pushElData(eSha, el[key], graph.links);
+              hasParents = true;
+            }
+            else { elNode.push(el[key]); }
+          }
+        }
+        if (hasParents == false) { pushElement(eSha, null, elLink); }
+        pushElData(eSha, elNode, graph.nodes);
+      });
+    });
 
-/*Populate the provided graph data structure ({nodes:[], links:[]}) with commit data. 
-NODE represents a commit with a unique id, and all metadata. Be careful: some attributes are keywords reserved for the layout function (e.g., x and y) and you can't use them as variable names for metadata.
+    console.log(graph.nodes);
+    console.log(graph.links);
 
-LINK points to the parents which is an attribute of the commit. Note there may not be parents or there can be multiple (e.g., if the commit is a merge of multiple branches). 
-
-*/
 
         graph.nodes = d3.range(nb_nodes).map(function() {  
           return { cat:Math.floor(nb_cat*Math.random()) }; 
@@ -162,6 +195,9 @@ LINK points to the parents which is an attribute of the commit. Note there may n
           })
 
           graph_update(500);
+
+/*          iScale.domain(graph.nodes.map( function(d) {return d[0]}));
+          tScale.domain([ ]);*/
         }
 
         function line_cat_layout() {
@@ -256,21 +292,6 @@ LINK points to the parents which is an attribute of the commit. Note there may n
 
         force_layout();
 
-
-
-      }   // awaitAll function else line close
-    });   // awaitAll line close
-  }       // d3.json function else line close 
-});       // d3.json line close 
-
-
-/*      d3.json(repo+'commits?sha='+sha+'&callback=foo', function(response) {
-        var meta = response.meta;
-        var data = response.data;
-        console.log(meta);
-        console.log(data);
-      });
-*/
 
 
 
