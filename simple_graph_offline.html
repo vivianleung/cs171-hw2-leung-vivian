@@ -52,7 +52,6 @@ var width = 900,
 var tScale = d3.time.scale.utc().range([0, width]);
 var iScale = d3.scale.ordinal().rangeRoundBands([0, height], .8, 0);
 
-var samplenode;
 /*The GitHub Network Graph Visualizer layout is a linear layout. Extend the provided linear layout with two scales to display commits on the axis. 
 
 The first scale should be index-based and use equal intervals between nodes. 
@@ -106,31 +105,64 @@ The second scale should use time scales, where the position reflects absolute ti
       });
     });
 
-    console.log(graph.nodes, "\n", graph.links);
-
     var Index = function(d) { return d.sha; };
-    var Time = function(d) { return d.commit.committer.date; };
+    var Time = function(d) { 
+      var date = d.commit.committer.date.split(/[\-\:TZ]/g, 6);
+      var dateCS = "";
+      for (var i = 0; i < date.length ; i++) { dateCS += date[i] + ", ";} 
+      dateCS.slice(-3);
+
+      console.log("regex", dateCS);
+      var parseDate = new Date(Date.UTC(dateCS));
+      console.log(parseDate);
+      return parseDate; 
+    };
 
     iScale.domain(graph.nodes.map( Index ));
     tScale.domain(graph.nodes.map( Time ));
 
     var scaleBy = 'None';
-      graph.nodes = d3.range(nb_nodes).map(function(d) {  
-        var dScaled;
-        if (scaleBy == 'time') { dScaled = tScale( function() { return Time(d) }) ;}
-        else { dScaled = iScale( function() { return Index(d)} ); }
-        return { cat:Math.floor(nb_cat*dScaled) }; 
-      })
 
+
+    console.log(graph.nodes)
+
+    var nodesMap = function(scaleBy) {
+      var scaledVal;
+      var tMax = d3.max(graph.nodes.map(Time));
+      var iMax = d3.max(graph.nodes.map(Index));
+      console.log(tMax, iMax);
+
+      graph.nodes.forEach(function(d) {
+        if (scaleBy == 'time') { scaledVal = tScale(d.commit.committer.date) / tMax; }
+        else { scaledVal = iScale(d.sha) / iMax; }
+  //      console.log(scaledVal);
+        d.cat = Math.floor(nb_cat*scaledVal);
+//        console.log(d.cat);
+      });
+    }
+
+          /*var scaledVal = dScale((d + dAtt)))*/
+
+        
+/*          d.cat = Math.floor(nb_cat*dScaled) ; 
+*/     
+        
+      
+    
+
+    nodesMap(scaleBy)
     graph.nodes.map(function(d, i) {
 
       graph.nodes.map(function(e, j) {
-        console.log("d", d, "i", i, "e", e, "j", j);
-        if(Math.random()>.99 && i!=j)
+/*        console.log("d", d, "i", i, "e", e, "j", j);
+*/        if(Math.random()>.99 && i!=j)
           graph.links.push({"source": i, "target": j})
 
       })
     })
+
+/*    console.log(graph.nodes, "\n", graph.links);
+*/
 
         // Generate the force layout
         var force = d3.layout.force()
