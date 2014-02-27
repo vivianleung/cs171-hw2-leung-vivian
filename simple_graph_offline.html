@@ -75,11 +75,10 @@ The second scale should use time scales, where the position reflects absolute ti
     COMMITDATA.forEach( function(subarray) {
       subarray.forEach( function(eL) {
 
-        // helper function to push data to respective arrays
-        var pushElData = function(key, coffee, arr) {
-          var obj = {};
-          obj[key] = coffee;
-          return arr.push(obj);
+      var packData = function(key, coffee, arr) {
+        var obj = {};
+        obj[key] = coffee;
+        return obj;
         };
 
         //  modify attributes that may clash w layout
@@ -89,14 +88,18 @@ The second scale should use time scales, where the position reflects absolute ti
           for (var j = 0; j < attrs.length; j++) { var a = attrs[j];
             eL[k][k+"_"+a] = eL[k][a];
             delete eL[k][a];
-          }
-        }
+        }}
 
         // populates graph.links with parents data
         if (eL.parents == 'undefined' || $.isEmptyObject(eL.parents) ) 
-          { eL.parents = {"html_url": null, "sha": null, "url": null }; }
-        var pData = { "parents": eL.parents, "sha": eL.sha };
-        graph.links.push(pData);
+          { eL.parents = {}; }
+        var pData = {};
+        var source = packData("source", eL.parents);
+        var target = packData("target", eL.sha);
+        pData["source"] = eL.parents;
+        pData["target"] = target;
+
+        graph.nodes.push(pData);
 
         // POPULATE GRAPH.NODES with the other metadata
         var eLNode = {};
@@ -106,63 +109,75 @@ The second scale should use time scales, where the position reflects absolute ti
     });
 
     var Index = function(d) { return d.sha; };
-    var Time = function(d) { 
-      var date = d.commit.committer.date.split(/[\-\:TZ]/g, 6);
-      var dateCS = "";
-      for (var i = 0; i < date.length ; i++) { dateCS += date[i] + ", ";} 
-      dateCS.slice(-3);
+    var Time = function(d) { var date = Date.parse(d.commit.committer.date);
+      d.commit.committer.date_parsed = date;
+      d.weight = 2;
+      return date; };
 
-      console.log("regex", dateCS);
-      var parseDate = new Date(Date.UTC(dateCS));
-      console.log(parseDate);
-      return parseDate; 
-    };
-
-    iScale.domain(graph.nodes.map( Index ));
-    tScale.domain(graph.nodes.map( Time ));
+    var inMap = graph.nodes.map(Index);
+    var tiMap = graph.nodes.map(Time);
+    
+    iScale.domain(inMap);
+    tScale.domain(tiMap);
 
     var scaleBy = 'None';
 
-
-    console.log(graph.nodes)
-
-    var nodesMap = function(scaleBy) {
+    var nodeInitialize = function(scaleBy) {
       var scaledVal;
-      var tMax = d3.max(graph.nodes.map(Time));
-      var iMax = d3.max(graph.nodes.map(Index));
-      console.log(tMax, iMax);
+      var tMax = tScale( d3.max(tScale.domain()) );
+      var iMax = iScale( d3.max(iScale.domain()) );
 
       graph.nodes.forEach(function(d) {
         if (scaleBy == 'time') { scaledVal = tScale(d.commit.committer.date) / tMax; }
         else { scaledVal = iScale(d.sha) / iMax; }
-  //      console.log(scaledVal);
         d.cat = Math.floor(nb_cat*scaledVal);
-//        console.log(d.cat);
       });
-    }
+    } 
 
-          /*var scaledVal = dScale((d + dAtt)))*/
+    nodeInitialize(scaleBy);
 
-        
-/*          d.cat = Math.floor(nb_cat*dScaled) ; 
-*/     
-        
-      
-    
 
-    nodesMap(scaleBy)
-    graph.nodes.map(function(d, i) {
 
-      graph.nodes.map(function(e, j) {
-/*        console.log("d", d, "i", i, "e", e, "j", j);
-*/        if(Math.random()>.99 && i!=j)
-          graph.links.push({"source": i, "target": j})
 
-      })
-    })
+/*    var sourceMap = graph.links.map( function(d) { 
+        // only if they have parents
+        if (d.parents[0].sha == null || d.parents[0].sha == undefined) { return; }
+        else{
+          var objParents = {};
+          var source = [];
+          var target = d.sha;
+          for (var i = 0; i < d.parents.length; i++) { source.push(d.parents[i].sha); }
+          objParents = {'target': target, 'source': source};
+          return objParents;
+      }
+    });*/
 
-/*    console.log(graph.nodes, "\n", graph.links);
+
+
+
+/*    graph.links.push({"source": i, "target": j})
 */
+/*    var par_data = function(obj) {
+      var par_len = obj.parents.length;
+      if (par_len < 1 ) { return -1; }
+      else { 
+        par_sha = [par_sha.append(d.sha)];
+        for (var q = 0; q < par_lens; q++) { par_sha.append(d.parents[a].sha); }
+        return [par_len, par_sha];
+      }
+    }*/
+
+    console.log(graph.nodes, "\n", graph.links);
+
+
+
+// CASES: 1) D nodes are parents of E nodes. (Curr D sha is same as E parent sha)
+//        2) E nodes are parents of D nodes. (Curr E sha is same as D parent sha)
+//        3) D and E nodes are children of the same node. (D and E parent shas are same)
+//        4) D and E nodes merged together. (Curr D, E have same sha)
+/*0: "17319fed8fd7e656a8910f77da7aecf10b7f8dd1"
+30:  "c314a155656e1a06a7dd3e44c73ec34a14ffa728"*/
+
 
         // Generate the force layout
         var force = d3.layout.force()
@@ -173,10 +188,7 @@ The second scale should use time scales, where the position reflects absolute ti
             .on("start", function(d) {})
             .on("end", function(d) {})
 
-        function tick(d) {
-
-          graph_update(0);
-        }
+        function tick(d) { graph_update(0); }
 
         function random_layout() {
           
@@ -186,25 +198,20 @@ The second scale should use time scales, where the position reflects absolute ti
             d.x = width/4 + 2*width*Math.random()/4;
             d.y = height/4 + 2*height*Math.random()/4;
           })
-          
           graph_update(500);
         }
 
         function force_layout() {
-
          force.nodes(graph.nodes)
               .links(graph.links)
               .start();
         }
 
         function line_layout() {
-
           force.stop();
 
           graph.nodes.forEach(function(d, i) {
-            d.y = height/2;
-          })
-
+            d.y = height/2; })
           graph_update(500);
 
         }
@@ -212,11 +219,8 @@ The second scale should use time scales, where the position reflects absolute ti
         function line_cat_layout() {
 
           force.stop();
-
           graph.nodes.forEach(function(d, i) {
-            d.y = height/2 + d.cat*20;
-          })
-
+            d.y = height/2 + d.cat*20; })
           graph_update(500);
         }
 

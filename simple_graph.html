@@ -53,6 +53,11 @@ var width = 900,
     nb_cat = 10;
     repo = 'https://fa8be61e0851e97e73e73768a263e1890fddf197@api.github.com/repos/SleeplessByte/programming-life/';
 
+var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+var fill = d3.scale.category10();
+var graph = {nodes:[], links:[]};
 
 // test repo
 /*var repo = "https://api.github.com/repos/BIOFAB/ClothoBiofabEdition/";
@@ -63,18 +68,8 @@ d3.json(repo + 'branches', function(error, branches) {
 
   if (error) { console.log(error); }
   else { 
-
-    var svg = d3.select("body").append("svg")
-            .attr("width", width)
-            .attr("height", height);
-
-    var fill = d3.scale.category10();
-
-    var graph = {nodes:[], links:[]};
-
     // prepares queue for synchronous commit data retrieval
     var q = queue();
-
 
     // helper function to get commit data for a given sha
     var getComs = function(sha, whatsup) {
@@ -86,26 +81,22 @@ d3.json(repo + 'branches', function(error, branches) {
   
     // waits for returns from all tasks
     q.awaitAll(function(error, cData) { 
-
       if (error) {console.log(error);}
-
-      // SUCCESSS!
-      else { 
-        console.log(cData)
-        // populate graph data structure nodes and links
-        cData.forEach( function(subarray) {
-          console.log("subarray ", subarray);
-        })
+      else {
 
 
 
+       
+       
+      }   // awaitAll function else line close
+    });   // awaitAll line close
+  }       // d3.json function else line close 
+});       // d3.json line close 
 
-/*Populate the provided graph data structure ({nodes:[], links:[]}) with commit data. 
-NODE represents a commit with a unique id, and all metadata. Be careful: some attributes are keywords reserved for the layout function (e.g., x and y) and you can't use them as variable names for metadata.
 
-LINK points to the parents which is an attribute of the commit. Note there may not be parents or there can be multiple (e.g., if the commit is a merge of multiple branches). 
 
-*/
+
+
 
         graph.nodes = d3.range(nb_nodes).map(function() {  
           return { cat:Math.floor(nb_cat*Math.random()) }; 
@@ -124,153 +115,144 @@ LINK points to the parents which is an attribute of the commit. Note there may n
         var force = d3.layout.force()
             .size([width, height])
             .charge(-50)
-            .linkDistance(10)
+            .linkDistance(10) 
             .on("tick", tick)
             .on("start", function(d) {})
             .on("end", function(d) {})
 
-        function tick(d) {
+  function tick(d) {
 
-          graph_update(0);
-        }
+    graph_update(0);
+  }
 
-        function random_layout() {
-          
-          force.stop();
+  function random_layout() {
+    
+    force.stop();
 
-          graph.nodes.forEach(function(d, i) {
-            d.x = width/4 + 2*width*Math.random()/4;
-            d.y = height/4 + 2*height*Math.random()/4;
-          })
-          
-          graph_update(500);
-        }
+    graph.nodes.forEach(function(d, i) {
+      d.x = width/4 + 2*width*Math.random()/4;
+      d.y = height/4 + 2*height*Math.random()/4;
+    })
+    
+    graph_update(500);
+  }
 
-        function force_layout() {
+  function force_layout() {
 
-         force.nodes(graph.nodes)
-              .links(graph.links)
-              .start();
-        }
+   force.nodes(graph.nodes)
+        .links(graph.links)
+        .start();
+  }
 
-        function line_layout() {
+  function line_layout() {
 
-          force.stop();
+    force.stop();
 
-          graph.nodes.forEach(function(d, i) {
-            d.y = height/2;
-          })
+    graph.nodes.forEach(function(d, i) {
+      d.y = height/2;
+    })
 
-          graph_update(500);
-        }
+    graph_update(500);
+  }
 
-        function line_cat_layout() {
+  function line_cat_layout() {
 
-          force.stop();
+    force.stop();
 
-          graph.nodes.forEach(function(d, i) {
-            d.y = height/2 + d.cat*20;
-          })
+    graph.nodes.forEach(function(d, i) {
+      d.y = height/2 + d.cat*20;
+    })
 
-          graph_update(500);
-        }
+    graph_update(500);
+  }
 
-        function radial_layout() {
+  function radial_layout() {
 
-          force.stop();
+    force.stop();
 
-          var r = height/2;
+    var r = height/2;
 
-          var arc = d3.svg.arc()
-                  .outerRadius(r);
+    var arc = d3.svg.arc()
+            .outerRadius(r);
 
-          var pie = d3.layout.pie()
-          .sort(function(a, b) { return a.cat - b.cat;})
-                  .value(function(d, i) { return 1; }); // equal share for each point
+    var pie = d3.layout.pie()
+    .sort(function(a, b) { return a.cat - b.cat;})
+            .value(function(d, i) { return 1; }); // equal share for each point
 
-          graph.nodes = pie(graph.nodes).map(function(d, i) {
-            d.innerRadius = 0;
-            d.outerRadius = r;
-            d.data.x = arc.centroid(d)[0]+height/2;
-            d.data.y = arc.centroid(d)[1]+width/2;
-            d.data.endAngle = d.endAngle; 
-            d.data.startAngle = d.startAngle; 
-            return d.data;
-          })
+    graph.nodes = pie(graph.nodes).map(function(d, i) {
+      d.innerRadius = 0;
+      d.outerRadius = r;
+      d.data.x = arc.centroid(d)[0]+height/2;
+      d.data.y = arc.centroid(d)[1]+width/2;
+      d.data.endAngle = d.endAngle; 
+      d.data.startAngle = d.startAngle; 
+      return d.data;
+    })
 
-          graph_update(500);
-        }
+    graph_update(500);
+  }
 
-        function category_color() {
-          d3.selectAll("circle").transition().duration(500).style("fill", function(d) { return fill(d.cat); });
-        }
+  function category_color() {
+    d3.selectAll("circle").transition().duration(500).style("fill", function(d) { return fill(d.cat); });
+  }
 
-        function category_size() {
-          d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.cat+1)*10); });
-        }
+  function category_size() {
+    d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.cat+1)*10); });
+  }
 
-        function graph_update(delay) {
+  function graph_update(delay) {
 
-          link.transition().duration(delay)
-              .attr("x1", function(d) { return d.target.x; })
-              .attr("y1", function(d) { return d.target.y; })
-              .attr("x2", function(d) { return d.source.x; })
-              .attr("y2", function(d) { return d.source.y; });
+    link.transition().duration(delay)
+        .attr("x1", function(d) { return d.target.x; })
+        .attr("y1", function(d) { return d.target.y; })
+        .attr("x2", function(d) { return d.source.x; })
+        .attr("y2", function(d) { return d.source.y; });
 
-          node.transition().duration(delay)
-              .attr("transform", function(d) { 
-                return "translate("+d.x+","+d.y+")"; 
-              });
-        }
+    node.transition().duration(delay)
+        .attr("transform", function(d) { 
+          return "translate("+d.x+","+d.y+")"; 
+        });
+  }
 
-        d3.select("input[value=\"force\"]").on("click", force_layout);
-        d3.select("input[value=\"random\"]").on("click", random_layout);
-        d3.select("input[value=\"line\"]").on("click", line_layout);
-        d3.select("input[value=\"line_cat\"]").on("click", line_cat_layout);
-        d3.select("input[value=\"radial\"]").on("click", radial_layout);
+  d3.select("input[value=\"force\"]").on("click", force_layout);
+  d3.select("input[value=\"random\"]").on("click", random_layout);
+  d3.select("input[value=\"line\"]").on("click", line_layout);
+  d3.select("input[value=\"line_cat\"]").on("click", line_cat_layout);
+  d3.select("input[value=\"radial\"]").on("click", radial_layout);
 
-        d3.select("input[value=\"nocolor\"]").on("click", function() {
-          d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
-        })
+  d3.select("input[value=\"nocolor\"]").on("click", function() {
+    d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
+  })
 
-        d3.select("input[value=\"color_cat\"]").on("click", category_color);
+  d3.select("input[value=\"color_cat\"]").on("click", category_color);
 
-        d3.select("input[value=\"nosize\"]").on("click", function() {
-          d3.selectAll("circle").transition().duration(500).attr("r", 5);
-        })
+  d3.select("input[value=\"nosize\"]").on("click", function() {
+    d3.selectAll("circle").transition().duration(500).attr("r", 5);
+  })
 
-        d3.select("input[value=\"size_cat\"]").on("click", category_size);
+  d3.select("input[value=\"size_cat\"]").on("click", category_size);
 
-        var link = svg.selectAll(".link")
-                      .data(graph.links)
-                    .enter().append("line")
-                      .attr("class", "link")
+  var link = svg.selectAll(".link")
+                .data(graph.links)
+              .enter().append("line")
+                .attr("class", "link")
 
-        var node = svg.selectAll(".node")
-                      .data(graph.nodes)
-                    .enter()
-                      .append("g").attr("class", "node");
+  var node = svg.selectAll(".node")
+                .data(graph.nodes)
+              .enter()
+                .append("g").attr("class", "node");
 
-        node.append("circle")
-            .attr("r", 5)
+  node.append("circle")
+      .attr("r", 5)
 
-        force_layout();
-
-
-
-      }   // awaitAll function else line close
-    });   // awaitAll line close
-  }       // d3.json function else line close 
-});       // d3.json line close 
+  force_layout();
 
 
-/*      d3.json(repo+'commits?sha='+sha+'&callback=foo', function(response) {
-        var meta = response.meta;
-        var data = response.data;
-        console.log(meta);
-        console.log(data);
-      });
-*/
+
+
+
+
+
 
 
 
