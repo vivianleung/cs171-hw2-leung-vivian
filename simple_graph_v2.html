@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Homework 2 Graph</title>
+  <link href="https://roboto-webfont.googlecode.com/svn/trunk/roboto.all.css" rel="stylesheet" type="text/css">
+  <link type="text/css" href="simple_graph.css" rel="stylesheet">
+</head>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+  <h1>Simple Graph</h1>
+  <form>
+  Layout:
+    <label><input type="radio" name="layout" value="force" checked> Force</label>
+    <label><input type="radio" name="layout" value="random" > Random</label>
+    <label><input type="radio" name="layout" value="radial"> Radial</label>  
+    <label><input type="radio" name="layout" value="line"> Line</label>
+    <label><input type="radio" name="layout" value="line_cat"> Line by Category</label>
+  </form>
+  <form>
+  Color:
+    <label><input type="radio" name="color" value="nocolor" checked> None</label>
+    <label><input type="radio" name="color" value="color_cat" > Category</label>
+  </form>
+  <form>
+  Size:
+    <label><input type="radio" name="size" value="nosize" checked> None</label>
+    <label><input type="radio" name="size" value="size_cat" > Category</label>
+  </form>
+  <form>
+  Scale:
+    <label><input type="radio" name="scale" value="index" checked> None</label>
+    <label><input type="radio" name="scale" value="time" > Time</label>
+  </form>
+<script>
+
+// I chose the programming-life repository because I'm very interested in computational biology and it's a super-cool way of visually communicating biology!  ^_^ 
+
+// http://sleeplessbyte.github.io/programming-life/
+// https://github.com/SleeplessByte/programming-life
+
+// test repo
+//    repo = "https://2bfd9c196f103380dc04c5811b140a6c57d567ad@api.github.com/repos/SleeplessByte/programming-life/";
+
+ 
+// CONSTANTS
+var width = 900,
+    height = 700;
+var repo = "https://2bfd9c196f103380dc04c5811b140a6c57d567ad@api.github.com/repos/BIOFAB/ClothoBiofabEdition/";
+var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+var fill = d3.scale.category10();
+var graph = {nodes:[], links:[]};
+var tScale = d3.time.scale();
+var iScale = d3.scale.ordinal();
+var nb_cat = 10;
+var nb_nodes;
+
+// retrieves information on all branches of repo
+d3.json(repo + 'branches', function(error, branches) {
+
+  if (error) { console.log(error); }
+  else { 
+    // prepares queue for synchronous commit data retrieval
+    var q = queue();
+
+    // helper function to get commit data for a given sha
+    var getCommits = function(sha, callback) {
+      d3.json(repo+"commits?sha="+sha+"&per_page=50", function(d) { 
+        callback(null, d); }); } ;
+
+    // for each branch, get commit data -- task added by .defer() to queue q
+    branches.forEach( function(d) {q.defer(getCommits, d["commit"]["sha"]); });
+  
+    // waits for returns from all tasks
+    q.awaitAll(function(error, commitData) { 
+      if (error) { console.log(error) ;}
+      else {
+        var parseDate = d3.time.format("%Y-%m-%dT%H:%M:%SZ").parse;
+
+        // populates GRAPH.NODES wtih an object per commit
+        commitData.forEach( function(subarray) {
+          subarray.forEach( function(d) {
+            d.commit.committer.date = parseDate(d.commit.committer.date);
+            var dNode = {};
+            for (var key in d) { dNode[key] = d[key]; }
+            graph.nodes.push(dNode); 
+          });
+        });
+        loadPage(); 
+      }
+    })
+  }
+})
+
+function loadPage() {
+
+  // constants and variables for scales
+  var Time = function(d) { return d.commit.committer.date; };
+  var Index = function(d, i) { return i; };  // CHANGED THIS
+
+  nb_nodes = graph.nodes.length;
+  tScale.domain(graph.nodes.map(Time)) .rangeRound([0, width - 10]);
+  iScale.domain(graph.nodes.map(Index)).range([0, width - 10]);;
+
+  // since we're using an ordinal scale here, we can just use arr.len-1
+  var iDomMax = iScale.domain().length - 1 ; 
+  graph.nodes.map( function(d, i) { d.cat = Math.floor(i/iDomMax*nb_cat); });
+
+  // object of key-value pairs to look up graph.nodes index val for given sha
+  var shaToIndex = {};
+  graph.nodes.map( function(d, i) { shaToIndex[d.sha] = i; });
+
+  // populate GRAPH.LINKS
+  graph.nodes.map( function(d, i) {
+    if (d.hasOwnProperty('parents')) {
+      d.parents.forEach( function(s) {
+        var sourceSha = s.sha;
+        var sourceNode = graph.nodes[shaToIndex[sourceSha]];
+        if (sourceNode != undefined) {
+          graph.links.push({"source": sourceNode, "target": d}); 
+        }
+      });
+    }
+  });
+
+  // Generate the force layout
+  var force = d3.layout.force()
+      .size([width, height])
+      .charge(-50)
+      .linkDistance(10)
+      .on("tick", tick)
+      .on("start", function(d) {})
+      .on("end", function(d) {});
+
+  force_layout();
+
+  var link = svg.selectAll(".link")
+                .data(force.links())
+                .enter().append("line")
+                .attr("class", "link")
+
+  var node = svg.selectAll(".node")
+                .data(force.nodes())
+                .enter()
+                .append("g").attr("class", "node");
+
+  node.append("circle")
+      .attr("r", 5);
+
+  d3.select("input[value=\"force\"]").on("click", force_layout);
+  d3.select("input[value=\"random\"]").on("click", random_layout);
+  d3.select("input[value=\"line\"]").on("click", line_layout);
+  d3.select("input[value=\"line_cat\"]").on("click", line_cat_layout);
+  d3.select("input[value=\"radial\"]").on("click", radial_layout);
+  d3.select("input[value=\"nocolor\"]").on("click", function() {
+    d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
+  })
+  d3.select("input[value=\"color_cat\"]").on("click", category_color);
+  d3.select("input[value=\"nosize\"]").on("click", function() {
+    d3.selectAll("circle").transition().duration(500).attr("r", 5);  })
+  d3.select("input[value=\"size_cat\"]").on("click", category_size);
+  d3.select("input[value=\"index\"]").on("click", index_layout);
+  d3.select("input[value=\"time\"]").on("click", time_layout);
+
+
+  function tick(d) {  graph_update(0);  }
+
+  function force_layout() {
+    force.nodes(graph.nodes)
+        .links(graph.links)
+        .start();
+  }
+
+  function random_layout() {
+    force.stop();
+    graph.nodes.forEach(function(d, i) {
+      d.x = width/4 + 2*width*Math.random()/4;
+      d.y = height/4 + 2*height*Math.random()/4;  
+    })
+    graph_update(500);
+  }
+
+  function line_layout() {
+    force.stop();
+    graph.nodes.forEach(function(d, i) { d.y = height/2; });
+    graph_update(500);
+  }
+
+  function line_cat_layout() {
+    force.stop();
+    graph.nodes.forEach(function(d, i) {  d.y = height/2 + d.cat*20;  });
+    graph_update(500);
+  }
+
+  function radial_layout() {
+    force.stop();
+    var r = height/2;
+    var arc = d3.svg.arc().outerRadius(r);
+    var pie = d3.layout.pie()
+    .sort(function(a, b) { return a.cat - b.cat;})
+            .value(function(d, i) { return 1; }); // equal share for each point
+
+    graph.nodes = pie(graph.nodes).map(function(d, i) {
+      d.innerRadius = 0;
+      d.outerRadius = r;
+      d.data.x = arc.centroid(d)[0]+height/2;
+      d.data.y = arc.centroid(d)[1]+width/2;
+      d.data.endAngle = d.endAngle; 
+      d.data.startAngle = d.startAngle; 
+      return d.data;
+    })
+    graph_update(500);
+  }
+
+  function category_color() {
+    d3.selectAll("circle").transition().duration(500).style("fill", function(d) { return fill(d.cat); });
+  }
+
+  function category_size() {
+    d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.cat+1)*10); });
+  }
+  function index_layout() {
+    force.stop();
+    var imax = iScale(d3.max(iScale.domain())); 
+
+    graph.nodes.forEach(function(d, i) {
+      var scaleD = iScale(i);
+      d.cat = Math.floor(scaleD/imax*nb_cat);
+      d.x = scaleD;
+      d.y = height/2 + d.cat*20;
+    });
+    graph_update(500);
+  }
+
+  function time_layout() {
+    force.stop();
+    var tmax = tScale(d3.max(tScale.domain())) ; 
+
+    graph.nodes.forEach(function(d, i) {
+      var scaleD = tScale(d.commit.committer.date)
+      d.cat = Math.floor(scaleD/tmax*nb_cat);
+      d.x = tScale(d.commit.committer.date);
+      d.y = height/2 + d.cat*20; 
+    });
+    graph_update(500);
+  }
+
+  function graph_update(delay) {
+    link.transition().duration(delay)
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.transition().duration(delay)
+        .attr("transform", function(d) { 
+          return "translate("+d.x+","+d.y+")"; }); 
+  }
+}
+
+</script>
+</body>
+</html>
