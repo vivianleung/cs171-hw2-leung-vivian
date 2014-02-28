@@ -7,7 +7,7 @@
   <link type="text/css" href="simple_graph.css" rel="stylesheet">
 </head>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="testcommit_plife.js"></script>
@@ -45,12 +45,14 @@
 // CONSTANTS
 var width = 900,
     height = 700;
-    nb_nodes = 100;
-    nb_cat = 10;
     repo = 'https://fa8be61e0851e97e73e73768a263e1890fddf197@api.github.com/repos/SleeplessByte/programming-life/';
+var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
 
-var tScale = d3.time.scale.utc().range([0, width]);
-var iScale = d3.scale.ordinal().rangeRoundBands([0, height], .8, 0);
+var fill = d3.scale.category10();
+var graph = {nodes:[], links:[]};
+
 
 /*The GitHub Network Graph Visualizer layout is a linear layout. Extend the provided linear layout with two scales to display commits on the axis. 
 
@@ -62,112 +64,61 @@ The second scale should use time scales, where the position reflects absolute ti
 // retrieves information on all branches of repo
 
 
-    var svg = d3.select("body").append("svg")
-            .attr("width", width)
-            .attr("height", height);
 
-    var fill = d3.scale.category10();
-
-    var graph = {nodes:[], links:[]};
-
-    // POPULATING GRAPH DATA STRUCTURE!
-    // for each subarray/branch  and for each element
-    COMMITDATA.forEach( function(subarray) {
-      subarray.forEach( function(eL) {
+/*  function modAttr(keyArray, d) {
+    // get direct obj to modify; defined locally b/c only need it here
+    function getModObj(obj, keyArr, j){
+      if (j + 1 >= keyArr.length) { return {'obj': obj, 'key': keyArr[j]}; }
+      else { return getModObj(obj[keyArr[j]], keyArr, ++j); }
+    }
+    for (var i = 0; i < keyArray.length; i++) {
+      var oldA = getModObj(d, keyArray[i].oldI, 0);
+      var newA = getModObj(d, keyArray[i].newI, 0);
+      newA.obj[newA.key] = oldA.obj[oldA.key];
+      delete oldA.obj[oldA.key];
+    }
+  }
+*/
+  // POPULATING GRAPH DATA STRUCTURE!
+  // for each subarray/branch  and for each element
+  COMMITDATA.forEach( function(subarray) {
+    subarray.forEach( function(d) {
 
       var packData = function(key, coffee, arr) {
         var obj = {};
         obj[key] = coffee;
         return obj;
-        };
-
-        //  modify attributes that may clash w layout
-        var modKeys = ['author', 'committer'];
-        var attrs = ["type", "id"];
-        for (var i = 0; i < modKeys.length; i++){ var k = modKeys[i];
-          for (var j = 0; j < attrs.length; j++) { var a = attrs[j];
-            eL[k][k+"_"+a] = eL[k][a];
-            delete eL[k][a];
-        }}
-
-        // populates graph.links with parents data
-        if (eL.parents == 'undefined' || $.isEmptyObject(eL.parents) ) 
-          { eL.parents = {}; }
-        var pData = {};
-        var source = packData("source", eL.parents);
-        var target = packData("target", eL.sha);
-        pData["source"] = eL.parents;
-        pData["target"] = target;
-
-        graph.nodes.push(pData);
-
-        // POPULATE GRAPH.NODES with the other metadata
-        var eLNode = {};
-        for (var key in eL) { eLNode[key] = eL[key]; }
-        graph.nodes.push(eLNode);
-      });
-    });
-
-    var Index = function(d) { return d.sha; };
-    var Time = function(d) { var date = Date.parse(d.commit.committer.date);
-      d.commit.committer.date_parsed = date;
-      d.weight = 2;
-      return date; };
-
-    var inMap = graph.nodes.map(Index);
-    var tiMap = graph.nodes.map(Time);
-    
-    iScale.domain(inMap);
-    tScale.domain(tiMap);
-
-    var scaleBy = 'None';
-
-    var nodeInitialize = function(scaleBy) {
-      var scaledVal;
-      var tMax = tScale( d3.max(tScale.domain()) );
-      var iMax = iScale( d3.max(iScale.domain()) );
-
-      graph.nodes.forEach(function(d) {
-        if (scaleBy == 'time') { scaledVal = tScale(d.commit.committer.date) / tMax; }
-        else { scaledVal = iScale(d.sha) / iMax; }
-        d.cat = Math.floor(nb_cat*scaledVal);
-      });
-    } 
-
-    nodeInitialize(scaleBy);
-
-
-
-
-/*    var sourceMap = graph.links.map( function(d) { 
-        // only if they have parents
-        if (d.parents[0].sha == null || d.parents[0].sha == undefined) { return; }
-        else{
-          var objParents = {};
-          var source = [];
-          var target = d.sha;
-          for (var i = 0; i < d.parents.length; i++) { source.push(d.parents[i].sha); }
-          objParents = {'target': target, 'source': source};
-          return objParents;
-      }
-    });*/
-
-
-
-
-/*    graph.links.push({"source": i, "target": j})
+      };
+/*      var keyArray =[ 
+        {"oldI":["author", "id"], "newI":["author","author_type"]},
+        {"oldI":["author","type"], "newI":["author","author_type"]},
+        {"oldI":["committer","type"], "newI":["committer","committer_type"]},
+        {"oldI": ["committer","id"], "newI": ["committer", "committer_id"]},
+        ];
+      modAttr(keyArray, d);                
 */
-/*    var par_data = function(obj) {
-      var par_len = obj.parents.length;
-      if (par_len < 1 ) { return -1; }
-      else { 
-        par_sha = [par_sha.append(d.sha)];
-        for (var q = 0; q < par_lens; q++) { par_sha.append(d.parents[a].sha); }
-        return [par_len, par_sha];
-      }
-    }*/
+      // POPULATE GRAPH.NODES with the other metadata
+      var dNode = {};
+      for (var key in d) { dNode[key] = d[key]; }
+      graph.nodes.push(dNode);
+    });
+  });
 
-    console.log(graph.nodes, "\n", graph.links);
+
+var nb_nodes = graph.nodes.length;
+var nb_cat = 10;
+
+// setting up scales and cat for each node
+var parseDate = d3.time.format("%Y-%m-%dT%H:%M:%SZ").parse;
+var Index = function(d, i) { return i ; };
+var Time = function(d) {  
+  d.commit.committer.date = parseDate(d.commit.committer.date);
+  return d.commit.committer.date; };
+
+var tScale = d3.time.scale().domain(graph.nodes.map(Time))
+              .rangeRound([0, width - 10]);
+var iScale = d3.scale.ordinal().domain(graph.nodes.map(Index))
+              .range([0, width - 10]);;
 
 
 
@@ -175,135 +126,196 @@ The second scale should use time scales, where the position reflects absolute ti
 //        2) E nodes are parents of D nodes. (Curr E sha is same as D parent sha)
 //        3) D and E nodes are children of the same node. (D and E parent shas are same)
 //        4) D and E nodes merged together. (Curr D, E have same sha)
-/*0: "17319fed8fd7e656a8910f77da7aecf10b7f8dd1"
-30:  "c314a155656e1a06a7dd3e44c73ec34a14ffa728"*/
+
+var iMax = iScale.domain()[iScale.domain().length - 1] ; 
+graph.nodes.map( function(d, i) {
+  d.cat = Math.floor(i/iMax*nb_cat);
+});
+
+var shaToIndex = {};
+graph.nodes.map( function(d, i) {
+    key = d.sha;
+    shaToIndex[key] = i;
+});
+
+graph.nodes.map( function(d, i) {
+  if (d.parents != undefined) {
+    d.parents.forEach( function(s) {
+      var sourceSha = s.sha;
+      var sourceNode = graph.nodes[shaToIndex[sourceSha]];
+      if (sourceNode != undefined)
+        {graph.links.push({"source": sourceNode, "target": d}); }
+    });
+  }
+});
 
 
-        // Generate the force layout
-        var force = d3.layout.force()
-            .size([width, height])
-            .charge(-50)
-            .linkDistance(10)
-            .on("tick", tick)
-            .on("start", function(d) {})
-            .on("end", function(d) {})
+// Generate the force layout
+var force = d3.layout.force()
+    .size([width, height])
+    .charge(-50)
+    .linkDistance(10)
+    .on("tick", tick)
+    .on("start", function(d) {})
+    .on("end", function(d) {})
 
-        function tick(d) { graph_update(0); }
+function tick(d) {
 
-        function random_layout() {
-          
-          force.stop();
+  graph_update(0);
+}
 
-          graph.nodes.forEach(function(d, i) {
-            d.x = width/4 + 2*width*Math.random()/4;
-            d.y = height/4 + 2*height*Math.random()/4;
-          })
-          graph_update(500);
-        }
+function random_layout() {
+  
+  force.stop();
 
-        function force_layout() {
-         force.nodes(graph.nodes)
-              .links(graph.links)
-              .start();
-        }
+  graph.nodes.forEach(function(d, i) {
+    d.x = width/4 + 2*width*Math.random()/4;
+    d.y = height/4 + 2*height*Math.random()/4;
+  })
+  
+  graph_update(500);
+}
 
-        function line_layout() {
-          force.stop();
+function force_layout() {
+  force.nodes(graph.nodes)
+      .links(graph.links)
+      .start();
+}
 
-          graph.nodes.forEach(function(d, i) {
-            d.y = height/2; })
-          graph_update(500);
+function line_layout() {
 
-        }
+  force.stop();
 
-        function line_cat_layout() {
+  graph.nodes.forEach(function(d, i) {
+    d.y = height/2;
+  })
 
-          force.stop();
-          graph.nodes.forEach(function(d, i) {
-            d.y = height/2 + d.cat*20; })
-          graph_update(500);
-        }
+  graph_update(500);
+}
 
-        function radial_layout() {
+function line_cat_layout() {
 
-          force.stop();
+  force.stop();
 
-          var r = height/2;
+  graph.nodes.forEach(function(d, i) {
+    d.y = height/2 + d.cat*20;
+  })
 
-          var arc = d3.svg.arc()
-                  .outerRadius(r);
+  graph_update(500);
+}
 
-          var pie = d3.layout.pie()
-          .sort(function(a, b) { return a.cat - b.cat;})
-                  .value(function(d, i) { return 1; }); // equal share for each point
+function radial_layout() {
 
-          graph.nodes = pie(graph.nodes).map(function(d, i) {
-            d.innerRadius = 0;
-            d.outerRadius = r;
-            d.data.x = arc.centroid(d)[0]+height/2;
-            d.data.y = arc.centroid(d)[1]+width/2;
-            d.data.endAngle = d.endAngle; 
-            d.data.startAngle = d.startAngle; 
-            return d.data;
-          })
+  force.stop();
 
-          graph_update(500);
-        }
+  var r = height/2;
 
-        function category_color() {
-          d3.selectAll("circle").transition().duration(500).style("fill", function(d) { return fill(d.cat); });
-        }
+  var arc = d3.svg.arc()
+          .outerRadius(r);
 
-        function category_size() {
-          d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.cat+1)*10); });
-        }
+  var pie = d3.layout.pie()
+  .sort(function(a, b) { return a.cat - b.cat;})
+          .value(function(d, i) { return 1; }); // equal share for each point
 
-        function graph_update(delay) {
+  graph.nodes = pie(graph.nodes).map(function(d, i) {
+    d.innerRadius = 0;
+    d.outerRadius = r;
+    d.data.x = arc.centroid(d)[0]+height/2;
+    d.data.y = arc.centroid(d)[1]+width/2;
+    d.data.endAngle = d.endAngle; 
+    d.data.startAngle = d.startAngle; 
+    return d.data;
+  })
 
-          link.transition().duration(delay)
-              .attr("x1", function(d) { return d.target.x; })
-              .attr("y1", function(d) { return d.target.y; })
-              .attr("x2", function(d) { return d.source.x; })
-              .attr("y2", function(d) { return d.source.y; });
+  graph_update(500);
+}
 
-          node.transition().duration(delay)
-              .attr("transform", function(d) { 
-                return "translate("+d.x+","+d.y+")"; 
-              });
-        }
+function category_color() {
+  d3.selectAll("circle").transition().duration(500).style("fill", function(d) { return fill(d.cat); });
+}
 
-        d3.select("input[value=\"force\"]").on("click", force_layout);
-        d3.select("input[value=\"random\"]").on("click", random_layout);
-        d3.select("input[value=\"line\"]").on("click", line_layout);
-        d3.select("input[value=\"line_cat\"]").on("click", line_cat_layout);
-        d3.select("input[value=\"radial\"]").on("click", radial_layout);
+function category_size() {
+  d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.cat+1)*10); });
+}
+function index_layout() {
 
-        d3.select("input[value=\"nocolor\"]").on("click", function() {
-          d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
-        })
+  force.stop();
+  var imax = iScale(d3.max(iScale.domain())); 
 
-        d3.select("input[value=\"color_cat\"]").on("click", category_color);
+  graph.nodes.forEach(function(d, i) {
+    var scaleD = iScale(i);
+    d.cat = Math.floor(scaleD/imax*nb_cat);
+    d.x = scaleD;
+    d.y = height/2 + d.cat*20;
+  });
 
-        d3.select("input[value=\"nosize\"]").on("click", function() {
-          d3.selectAll("circle").transition().duration(500).attr("r", 5);
-        })
+  graph_update(500);
+}
 
-        d3.select("input[value=\"size_cat\"]").on("click", category_size);
+function time_layout() {
+  force.stop();
+  var tmax = tScale(d3.max(tScale.domain())) ; 
 
-        var link = svg.selectAll(".link")
-                      .data(graph.links)
-                    .enter().append("line")
-                      .attr("class", "link")
+  graph.nodes.forEach(function(d, i) {
+    var scaleD = tScale(d.commit.committer.date)
+    d.cat = Math.floor(scaleD/tmax*nb_cat);
+    d.x = tScale(d.commit.committer.date);
+    d.y = height/2 + d.cat*20; 
+  });
 
-        var node = svg.selectAll(".node")
-                      .data(graph.nodes)
-                    .enter()
-                      .append("g").attr("class", "node");
+  graph_update(500);
 
-        node.append("circle")
-            .attr("r", 5)
+}
 
-        force_layout();
+function graph_update(delay) {
+
+  link.transition().duration(delay)
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node.transition().duration(delay)
+      .attr("transform", function(d) { 
+        return "translate("+d.x+","+d.y+")"; 
+      }); 
+}
+
+
+  d3.select("input[value=\"force\"]").on("click", force_layout);
+  d3.select("input[value=\"random\"]").on("click", random_layout);
+  d3.select("input[value=\"line\"]").on("click", line_layout);
+  d3.select("input[value=\"line_cat\"]").on("click", line_cat_layout);
+  d3.select("input[value=\"radial\"]").on("click", radial_layout);
+
+  d3.select("input[value=\"nocolor\"]").on("click", function() {
+    d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
+  })
+
+  d3.select("input[value=\"color_cat\"]").on("click", category_color);
+
+  d3.select("input[value=\"nosize\"]").on("click", function() {
+    d3.selectAll("circle").transition().duration(500).attr("r", 5); 
+  })
+  d3.select("input[value=\"size_cat\"]").on("click", category_size);
+  d3.select("input[value=\"index\"]").on("click", index_layout);
+  d3.select("input[value=\"time\"]").on("click", time_layout);
+
+  force_layout();
+
+  var link = svg.selectAll(".link")
+                .data(force.links())
+              .enter().append("line")
+                .attr("class", "link")
+
+  var node = svg.selectAll(".node")
+                .data(force.nodes())
+              .enter()
+                .append("g").attr("class", "node");
+
+  node.append("circle")
+      .attr("r", 5)
+
 
 
 

@@ -1,19 +1,16 @@
-import requests
 import json
 from Queue import *
 import threading
 import time
+import requests
 
-repo = 'https://api.github.com/repos/BIOFAB/ClothoBiofabEdition/'
-branchurl = repo + 'branches'
-branches = requests.get(branchurl)
-
-print(branches.text)
+repo = 'https://api.github.com/repos/SleeplessByte/programming-life/'
+print "hello"
 
 def getComs(sha):
 	while True:
 		item = q.get()
-		comsurl = repo + 'commits?sha=' + sha
+		comsurl = repo + 'commits?sha=' + sha +'&per_page=50'
 		payload = {'some': 'data'}
 		headers = {'content-type': 'application/json'}
 		coms = requests.get(comsurl, data=json.dumps(payload), headers=headers)
@@ -21,30 +18,36 @@ def getComs(sha):
 		json.dump(coms, f)
 
 		commits.append(coms)
-		json_data.close()
+		json_data.ClothoBiofabEditionse()
 		q.task_done()
 
-if (branches.ok):
-	branches.json()
-	f = open('commits_plife', 'w')
-	print len(branches)
-	q = Queue()
-	commits = [];
+print "hi again"
+branchurl = repo + 'branches'
+print "got the url"
+print branchurl
 
-	for branch in branches:
-		t = threading.Thread(target=getComs(branch["commit"]["sha"]))
-		t.daemon = True
-		t.start()
-		print "t: ", t
+r = requests.get(branchurl)
+branches = r.json()
 
-	for item in source():
-		print item
-		q.put(item)
+f = open('commits_plife', 'w')
+print len(branches)
+q = Queue()
+commits = [];
 
-	q.join()
+for branch in branches:
+	t = threading.Thread(target=getComs(branch["commit"]["sha"]))
+	t.daemon = True
+	t.start()
+	print "t: ", target
+
+for item in source():
+	print item
+	q.put(item)
+
+q.join()
 
 
-	f.close()
-	print commits
+f.close()
+print commits
 
 

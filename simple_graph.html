@@ -53,6 +53,9 @@ var width = 900,
     nb_cat = 10;
     repo = 'https://fa8be61e0851e97e73e73768a263e1890fddf197@api.github.com/repos/SleeplessByte/programming-life/';
 
+var tScale = d3.time.scale.utc().range([0, width]);
+var iScale = d3.scale.ordinal().rangeRoundBands([0, height], .8, 0);
+
 var svg = d3.select("body").append("svg")
         .attr("width", width)
         .attr("height", height);
@@ -63,6 +66,20 @@ var graph = {nodes:[], links:[]};
 /*var repo = "https://api.github.com/repos/BIOFAB/ClothoBiofabEdition/";
 */
 
+function modAttr(keyArray, d) {
+  // get direct obj to modify; defined locally b/c only need it here
+  function getModObj(obj, keyArr, j){
+    if (j + 1 >= keyArr.length) { return {'obj': obj, 'key': keyArr[j]}; }
+    else { return getModObj(obj[keyArr[j]], keyArr, ++j); }
+  }
+  for (var i = 0; i < keyArray.length; i++) {
+    var oldA = getModObj(d, keyArray[i].oldI, 0);
+    var newA = getModObj(d, keyArray[i].newI, 0);
+    newA.obj[newA.key] = oldA.obj[oldA.key];
+    delete oldA.obj[oldA.key];
+  }
+}
+
 // retrieves information on all branches of repo
 d3.json(repo + 'branches', function(error, branches) {
 
@@ -72,44 +89,88 @@ d3.json(repo + 'branches', function(error, branches) {
     var q = queue();
 
     // helper function to get commit data for a given sha
-    var getComs = function(sha, whatsup) {
-      d3.json(repo+"commits?sha="+sha, function(d) { whatsup(null, d); }); } ;
+    var getCommits = function(sha, callback) {
+      d3.json(repo+"commits?sha="+sha+"&per_page=50", function(d) { callback(null, d); }); } ;
 
     // for each branch, get commit data -- task added by .defer() to queue q
-    branches.forEach( function(d) { 
-      q.defer(getComs, d["commit"]["sha"]); }); 
+    branches.forEach( function(d) {q.defer(getCommits, d["commit"]["sha"]); });
   
     // waits for returns from all tasks
-    q.awaitAll(function(error, cData) { 
+    q.awaitAll(function(error, commitData) { 
       if (error) {console.log(error);}
       else {
+        commitData.forEach( function(subarray) {
+          subarray.forEach( function(d) {
 
+            var packData = function(key, coffee, arr) {
+              var obj = {};
+              obj[key] = coffee;
+              return obj;
+            };
 
+            var keyArray =[ 
+              {"oldI":["author", "id"], "newI":["author","author_type"]},
+              {"oldI":["author","type"], "newI":["author","author_type"]},
+              {"oldI":["committer","type"], "newI":["committer","commiter_type"]},
+              {"oldI": ["committer","id"], "newI": ["committer", "commiter_id"]},
+              ];
+            modAttr(keyArray, d);        
 
-       
-       
+            // populates graph.links with parents data
+            if (d.parents == 'undefined' || $.isEmptyObject(d.parents) ) 
+              { d.parents = {}; }
+            var pData = {};
+            var source = packData("source", d.parents);
+            var target = packData("target", d.sha);
+            pData["source"] = d.parents;
+            pData["target"] = target;
+
+            graph.links.push(pData);
+
+            // POPULATE GRAPH.NODES with the other metadata
+            var dNode = {};
+            for (var key in d) { dNode[key] = d[key]; }
+            graph.nodes.push(dNode);
+          });
+        });
       }   // awaitAll function else line close
     });   // awaitAll line close
   }       // d3.json function else line close 
 });       // d3.json line close 
 
 
+var Index = function(d) { return d.sha; };
+var Time = function(d) { 
+  var date = Date.parse(d.commit.committer.date);
+  d.commit.committer.date_parsed = date;
+  d.weight = 2;
+  return date; };
+
+var inMap = graph.nodes.map(Index);
+var tiMap = graph.nodes.map(Time);
+
+iScale.domain(inMap);
+tScale.domain(tiMap);
+
+var nodeInitialize = function(scaleBy) {
+  var scaledVal;
+  var tMax = tScale( d3.max(tScale.domain()) );
+  var iMax = iScale( d3.max(iScale.domain()) );
+
+
+  var scaleBy = 'None';
+
+  graph.nodes.forEach(function(d) {
+    if (scaleBy == 'time') { scaledVal = tScale(d.commit.committer.date) / tMax; }
+    else { scaledVal = iScale(d.sha) / iMax; }
+    d.cat = Math.floor(nb_cat*scaledVal);
+  });
+} 
+
+nodeInitialize(scaleBy);
 
 
 
-
-        graph.nodes = d3.range(nb_nodes).map(function() {  
-          return { cat:Math.floor(nb_cat*Math.random()) }; 
-        })
-
-        graph.nodes.map(function(d, i) {
-
-          graph.nodes.map(function(e, j) {
-            if(Math.random()>.99 && i!=j)
-              graph.links.push({"source": i, "target": j})
-
-          })
-        })
 
         // Generate the force layout
         var force = d3.layout.force()
