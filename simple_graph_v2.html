@@ -9,7 +9,7 @@
 <body>
 <script src="http://d3js.org/d3.v3.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
-<script src="synbiodex_stats.js"></script>
+<script src="pulls.js"></script>
   <h1>Simple Graph</h1>
   <form>
   Layout:
@@ -53,6 +53,8 @@ var iScale = d3.scale.ordinal();
 var uScale = d3.scale.ordinal();
 var nb_cat;
 var nb_nodes; 
+var heads = {};
+var pulldata = {};
 
 /** TYPES OF NODES:
   * Regular Commit Node (same branch)  1 source   1 target
@@ -68,30 +70,46 @@ d3.json(repo + 'branches', function(error, blist) {
   if (error) { console.log(error); }
   else { 
     // prepares queue for synchronous commit data retrieval
+    blist.map( function(d) { 
+      heads[d.name] = {'name': d.name, 'sha': d.commit.sha}; });
     var q = queue();
     nb_cat = blist.length;
-    blist.forEach( function(d, i) {d.cat = i; }  )
 
     // helper function to get commit data for a given sha
     var getCommits = function(b, callback) {
-      var sha = b.commit.sha
+      var sha = b.commit.sha;
       d3.json(repo+"commits?sha="+sha+"&per_page=100", function(d) { 
         callback(null, [d, b]); }); } ;
 
+    var getPullData = function(callback) {
+      d3.json(repo+"pulls?state=all", function(error, pullD) {
+        if (error) { console.log(error); }
+        else { callback( null, pullD); } }); };
+
     // for each branch, get commit data -- task added by .defer() to queue q
     blist.forEach( function(b) {q.defer(getCommits, b); });
-  
+    q.defer(getPullData);
+
     // waits for returns from all tasks
     q.awaitAll(function(error, allData) { 
       DATA = allData;
       if (error) { console.log(error) ;}
       else {
+        var pullResults = allData.pop();
+        pullResults.forEach( function(d) {
+          var key = d.head.sha;
+          var info = {
+            'head': {'name':d.head.ref, 'sha':d.head.sha, 'head': heads.name},
+            'base': {'name':d.base.ref, 'sha':d.base.sha, 'head': heads.name},
+            'number': d.number,
+            'commits': d.commits_url
+          };
+          pulldata[key] = info;
+        });
         populateNodes(allData);
         loadPage();
-      }
-    });
-  }
-});
+   }});
+}});
 
 // populates GRAPH.NODES wtih an object per commit
 function populateNodes(allData) {
@@ -102,19 +120,18 @@ function populateNodes(allData) {
   allData.map( function(branch) {
     branch[0].map( function(newNode) {
 
-      var branchinfo = {'name': branch[1].name, 'cat': branch[1].cat };
-      
       // check if node already exists
       var exists = false;
       for (n in graph.nodes) {
         if (graph.nodes[n].sha == newNode.sha) { 
-          /*graph.nodes[n].branch.push(branchinfo);*/
+
+          graph.nodes[n].branchmap.push(branch[1].name);
           exists = true;}
       }
       if (exists == false) {
         var comNode = {};
         for (var key in newNode) { comNode[key] = newNode[key]; }
-        comNode.branch = branchinfo;
+        comNode.branchmap = [branch[1].name];
         comNode.commit.committer.date = parseDate(comNode.commit.committer.date);
         graph.nodes.push(comNode); 
       }
@@ -124,23 +141,27 @@ function populateNodes(allData) {
 
 function loadPage() {
 
-  // constants and variables for scales
-  var Time = function(d) { return d.commit.committer.date; };
-  var Index = function(d, i) { return i; };  // CHANGED THIS
 
-  nb_nodes = graph.nodes.length;
-  tScale.domain(d3.extent(graph.nodes.map(Time))).rangeRound([10, width - 10]);
-  iScale.domain(graph.nodes.map(Index)).range([10, width - 10]);;
-  uScale.domain(graph.nodes.map(function(d) {return d.commit.author.name;}))
-    .rangePoints([10, height-10]);
-
+    // GET RID OF THIS IN SCALES TOO
   // since we're using an ordinal scale here, we can just use arr.len-1
   graph.nodes.map( function(d, i) { d.cat = Math.floor(i/(nb_nodes-1)*nb_cat); });
+
+
+  // SORT NODES BY DATE
+  graph.nodes.sort( function(a,b) {
+    return a.commit.committer.date - b.commit.committer.date;
+  });
 
   // object of key-value pairs to look up graph.nodes index val for given sha
   var shaToIndex = {};
   graph.nodes.map( function(d, i) { shaToIndex[d.sha] = i; });
+    
+  var getNode = function(obj) { return graph.nodes[shaToIndex[obj.sha]]; }
 
+
+
+ // function branchify () {GOES HERE}
+    
   // populate GRAPH.LINKS
   graph.nodes.map( function(d, i) {
     if (d.hasOwnProperty('parents')) {
@@ -154,31 +175,15 @@ function loadPage() {
     }
   });
 
-  // SORT NODES BY DATE
-  graph.nodes.sort( function(a,b) {
-    return a.commit.committer.date - b.commit.committer.date;
-  });
-
-
-/*  var ppBranch = graph.nodes[0].branch;
-  var pBranch = graph.nodes[1].branch;
-
-  graph.nodes ( function(d) {
-    if (d.branch.name == pBranch.name) {
-      if (ppBranch.name == )
-      d.branch = pBranch;
-    }
-  });*/
-
-  // for each branch, find out branch events (if multiple children / targets -- check during links populate) and merge events (parents = 2)
-
-  // for each node, check whether last event (from before) is a branch or a merge - if branch, then color with branch color, else, color with merged parent
-
-
-// if node has two targets, 
-
-
-
+  // constants and variables for scales
+  var Time = function(d) { return d.commit.committer.date; };
+  var Index = function(d, i) { return i; };  
+  var User = function(d) { return d.commit.author.name; };
+  nb_nodes = graph.nodes.length;
+  tScale.domain(d3.extent(graph.nodes.map(Time))).rangeRound([10, width - 10]);
+  iScale.domain(graph.nodes.map(Index)).range([10, width - 10]);;
+  uScale.domain(graph.nodes.map(User)).rangePoints([10, height-10]);
+  fill.domain(Object.keys(heads));
 
 
   // Generate the force layout
@@ -204,24 +209,38 @@ function loadPage() {
       .attr("markerHeight", 8)
       .attr("orient", "auto")
       .append("svg:path")
-      .attr("d", "M0, -5L10,0L0,5");
+      .attr("d", "m0, -5L10,0L0,5");
 
-  var link = svg.append("svg:g").selectAll("path.link")
+  var link = svg.append("g").selectAll(".link")
                 .data(force.links())
                 .enter().append("svg:path")  // change to path here
                 .attr("class", "link")
                 .attr("marker-end", "url(#end)");
 
-  console.log(link);
   var node = svg.selectAll(".node")
                 .data(force.nodes())
                 .enter()
                 .append("g").attr("class", "node")
                 .call(force.drag);
-
+/*                .on("mouseover", function(d) { })
+                .on("mouseout", function(d) { })*/
 
   node.append("circle")
       .attr("r", 5);
+
+
+/*  var tippath = "M" + 
+*/
+/*  var tip = nodes.selectAll(".tips").path()
+                .data(force.nodes())
+                .enter().append("rect")
+
+
+
+                .attr("visibility:", "hidden");*/
+
+
+
 
   d3.select("input[value=\"force\"]").on("click", force_layout);
   d3.select("input[value=\"random\"]").on("click", random_layout);
@@ -235,8 +254,9 @@ function loadPage() {
   d3.select("input[value=\"nosize\"]").on("click", function() { 
     d3.selectAll("circle").transition().duration(500).attr("r", 5);  })
   d3.select("input[value=\"size_cat\"]").on("click", category_size);
-  d3.select("input[value=\"index\"]").on("click", force_layout);
+  d3.select("input[value=\"index\"]").on("click", index_layout);
   d3.select("input[value=\"time\"]").on("click", time_layout);
+
 
 
   function tick(d) {  graph_update(0);  }
@@ -266,7 +286,7 @@ function loadPage() {
     force.stop();
     graph.nodes.forEach(function(d, i) { 
       d.x = width*(i + 2)/nb_nodes;
-      d.y = uScale(d.commit.author.name); 
+      d.y = uScale(d.commit.author.name)/2 + height/4;  
     });
     graph_update(500);
   }
@@ -294,7 +314,7 @@ function loadPage() {
   function category_color() {
     d3.selectAll("circle").transition().duration(500)
     .style("fill", function(d){ 
-        return fill(d.branch.cat); });
+        return fill(d.branch.name); });
   }
 
   function category_size() {
@@ -302,18 +322,16 @@ function loadPage() {
   }
   function time_layout() {
     force.stop();
-    graph.nodes.forEach(function(d, i) {
-      console.log(tScale(d.commit.committer.date));
-      d.x = tScale((d.commit.committer.date)) ;
-      d.y = uScale(d.commit.author.name);  
+    graph.nodes.forEach(function(d) {
+      d.x = tScale(d.commit.committer.date) ;
     });
-/*    graph.nodes.forEach(function(d, i) { 
-      d.x = width*(i + 2)/nb_nodes;
-      d.y = height/2 + (d.branch.cat - nb_cat/2)*20;  
-
-
-*/
-
+    graph_update(500);
+  }
+  function index_layout() {
+    force.stop();
+    graph.nodesforEach(function(d, i) {
+      d.x = iScale(i);
+    });
     graph_update(500);
   }
 

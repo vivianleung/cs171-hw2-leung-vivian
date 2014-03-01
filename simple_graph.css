@@ -21,7 +21,7 @@ form
 
 }
 
-path.link {
+.link {
   fill: none;
   stroke: gray;
   stroke-width: 1.5px;

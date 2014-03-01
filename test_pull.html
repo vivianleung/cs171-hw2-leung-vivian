@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Homework 2 Graph</title>
+  <link href="https://roboto-webfont.googlecode.com/svn/trunk/roboto.all.css" rel="stylesheet" type="text/css">
+  <link type="text/css" href="simple_graph.css" rel="stylesheet">
+</head>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+  <h1>Simple Graph</h1>
+  <form>
+  Layout:
+    <label><input type="radio" name="layout" value="force" checked> Force</label>
+    <label><input type="radio" name="layout" value="random" > Random</label>
+    <label><input type="radio" name="layout" value="radial"> Radial</label>  
+    <label><input type="radio" name="layout" value="line"> Line</label>
+    <label><input type="radio" name="layout" value="line_cat"> Line by Category</label>
+  </form>
+  <form>
+  Color:
+    <label><input type="radio" name="color" value="nocolor" checked> None</label>
+    <label><input type="radio" name="color" value="color_cat" > Category</label>
+  </form>
+  <form>
+  Size:
+    <label><input type="radio" name="size" value="nosize" checked> None</label>
+    <label><input type="radio" name="size" value="size_cat" > Category</label>
+  </form>
+  <form>
+  Scale:
+    <label><input type="radio" name="scale" value="index" checked> None</label>
+    <label><input type="radio" name="scale" value="time" > Time</label>
+  </form>
+<script>
+
+// http://sleeplessbyte.github.io/programming-life/ 
+// https://github.com/SleeplessByte/programming-life
+  
+// CONSTANTS
+var width = 900,
+    height = 700;
+
+
+
+var PULL_LIST;
+var PULLCDATA;
+
+/** TYPES OF NODES:
+  * Regular Commit Node (same branch)  1 source   1 target
+  * First Node (new repository)        0 source   1 target
+  * Branch Head (terminal, recent)     1+ source  1 target  (not a parent)
+  * Merge Branch Node                  2+ source  1+ target
+  */
+
+
+// retrieves information on all branches of repo
+d3.json("https://2bfd9c196f103380dc04c5811b140a6c57d567ad@api.github.com/repos/SynBioDex/libSBOLj/pulls?state=all", function(error, pullList) {
+
+  if (error) { console.log(error); }
+  else { 
+    // prepares queue for synchronous commit data retrieval
+    PULL_LIST = pullList;
+    var q = queue();
+
+    // helper function to get commit data for a given sha
+    var getPullCommits = function(b, callback) {
+      d3.json(b, function(d) { 
+        callback(null, d) ; }); } ;
+
+    // for each branch, get commit data -- task added by .defer() to queue q
+    pullList.forEach( function(b) {q.defer(getPullCommits, b["commits_url"]); });
+    
+    // waits for returns from all tasks
+    q.awaitAll(function(error, allData) { 
+      DATA = allData;
+      if (error) { console.log(error) ;}
+      else {
+        console.log("done!");
+        PULLCDATA = allData;
+      }
+    });
+  }
+});
+
+
+</script>
+</body>
+</html>
