@@ -1,0 +1,2717 @@
+[
+  {
+    "sha": "6032cf3ea77669d4d14e89afe49a0d4203eb572e",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-04-20T15:49:56Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-04-20T15:49:56Z"
+      },
+      "message": "updated examples for SBOL9",
+      "tree": {
+        "sha": "928aa9ee220eee81b893b9f1270ed116b5c24c8b",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/928aa9ee220eee81b893b9f1270ed116b5c24c8b"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/6032cf3ea77669d4d14e89afe49a0d4203eb572e",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/6032cf3ea77669d4d14e89afe49a0d4203eb572e",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/6032cf3ea77669d4d14e89afe49a0d4203eb572e",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/6032cf3ea77669d4d14e89afe49a0d4203eb572e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f2f885c35ad41daf0dba1fa2cba021f8f2b1d536",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f2f885c35ad41daf0dba1fa2cba021f8f2b1d536",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/f2f885c35ad41daf0dba1fa2cba021f8f2b1d536"
+      }
+    ]
+  },
+  {
+    "sha": "f2f885c35ad41daf0dba1fa2cba021f8f2b1d536",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-04-02T16:36:32Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-04-02T16:36:32Z"
+      },
+      "message": "using the ExtensionProvider for regulatory extension",
+      "tree": {
+        "sha": "4d9ea5a6e71f8f66f42638ca55defe481f1d9a88",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/4d9ea5a6e71f8f66f42638ca55defe481f1d9a88"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/f2f885c35ad41daf0dba1fa2cba021f8f2b1d536",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f2f885c35ad41daf0dba1fa2cba021f8f2b1d536",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/f2f885c35ad41daf0dba1fa2cba021f8f2b1d536",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f2f885c35ad41daf0dba1fa2cba021f8f2b1d536/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "412091f75cec76a979154f60ec3696fcb3b638b6",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/412091f75cec76a979154f60ec3696fcb3b638b6",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/412091f75cec76a979154f60ec3696fcb3b638b6"
+      }
+    ]
+  },
+  {
+    "sha": "412091f75cec76a979154f60ec3696fcb3b638b6",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-03-12T17:30:49Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-03-12T17:31:01Z"
+      },
+      "message": "Device",
+      "tree": {
+        "sha": "f8344933f749a13e2699a2fb7d36bb316ddbdf1d",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/f8344933f749a13e2699a2fb7d36bb316ddbdf1d"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/412091f75cec76a979154f60ec3696fcb3b638b6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/412091f75cec76a979154f60ec3696fcb3b638b6",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/412091f75cec76a979154f60ec3696fcb3b638b6",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/412091f75cec76a979154f60ec3696fcb3b638b6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "fb2a91218d568838979029e27ccc7dfc35828d16",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb2a91218d568838979029e27ccc7dfc35828d16",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fb2a91218d568838979029e27ccc7dfc35828d16"
+      }
+    ]
+  },
+  {
+    "sha": "fb2a91218d568838979029e27ccc7dfc35828d16",
+    "commit": {
+      "author": {
+        "name": "eoberortner",
+        "email": "ernstl@bu.edu",
+        "date": "2013-03-12T17:26:14Z"
+      },
+      "committer": {
+        "name": "eoberortner",
+        "email": "ernstl@bu.edu",
+        "date": "2013-03-12T17:26:14Z"
+      },
+      "message": "Merge pull request #31 from drdozer/Device\n\nSketch of a plugin extension API and implementation for Device",
+      "tree": {
+        "sha": "fe5ba1677579487e20ee88034772b5e50e63495e",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/fe5ba1677579487e20ee88034772b5e50e63495e"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/fb2a91218d568838979029e27ccc7dfc35828d16",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb2a91218d568838979029e27ccc7dfc35828d16",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fb2a91218d568838979029e27ccc7dfc35828d16",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb2a91218d568838979029e27ccc7dfc35828d16/comments",
+    "author": {
+      "login": "eoberortner",
+      "id": 1379942,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1379942",
+      "gravatar_id": "bb030daf5d612af1f094a39e71be40f4",
+      "url": "https://api.github.com/users/eoberortner",
+      "html_url": "https://github.com/eoberortner",
+      "followers_url": "https://api.github.com/users/eoberortner/followers",
+      "following_url": "https://api.github.com/users/eoberortner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eoberortner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eoberortner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eoberortner/subscriptions",
+      "organizations_url": "https://api.github.com/users/eoberortner/orgs",
+      "repos_url": "https://api.github.com/users/eoberortner/repos",
+      "events_url": "https://api.github.com/users/eoberortner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eoberortner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "eoberortner",
+      "id": 1379942,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1379942",
+      "gravatar_id": "bb030daf5d612af1f094a39e71be40f4",
+      "url": "https://api.github.com/users/eoberortner",
+      "html_url": "https://github.com/eoberortner",
+      "followers_url": "https://api.github.com/users/eoberortner/followers",
+      "following_url": "https://api.github.com/users/eoberortner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eoberortner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eoberortner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eoberortner/subscriptions",
+      "organizations_url": "https://api.github.com/users/eoberortner/orgs",
+      "repos_url": "https://api.github.com/users/eoberortner/repos",
+      "events_url": "https://api.github.com/users/eoberortner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eoberortner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b"
+      },
+      {
+        "sha": "d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63"
+      }
+    ]
+  },
+  {
+    "sha": "d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-02-19T17:10:38Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-02-19T17:10:38Z"
+      },
+      "message": "The extend method on RegulationExtension now returns the narrowed type AsRegulations, removing the need for client code to cast.",
+      "tree": {
+        "sha": "fe5ba1677579487e20ee88034772b5e50e63495e",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/fe5ba1677579487e20ee88034772b5e50e63495e"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/d9ce3e9935cf653386dcbeabe08bcc4faf1d3a63/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "56dfd3d97958b0b80577556748b80ef2a7595646",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/56dfd3d97958b0b80577556748b80ef2a7595646",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/56dfd3d97958b0b80577556748b80ef2a7595646"
+      }
+    ]
+  },
+  {
+    "sha": "56dfd3d97958b0b80577556748b80ef2a7595646",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-02-19T16:59:45Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-02-19T16:59:45Z"
+      },
+      "message": "Adding a light-weight API for extensions to other data models, with a reference implementation for Device.",
+      "tree": {
+        "sha": "9d0ee90955b4f92ca1c5fe659229595e558dc91c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/9d0ee90955b4f92ca1c5fe659229595e558dc91c"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/56dfd3d97958b0b80577556748b80ef2a7595646",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/56dfd3d97958b0b80577556748b80ef2a7595646",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/56dfd3d97958b0b80577556748b80ef2a7595646",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/56dfd3d97958b0b80577556748b80ef2a7595646/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b"
+      }
+    ]
+  },
+  {
+    "sha": "ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-19T16:30:09Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-19T16:30:09Z"
+      },
+      "message": "Integration of Pigeon to visualize DnaComponents and Regulatory Interactions\n\nsee org.sbolstandard.regulatory.usecases.ToggleSwitch as an example...",
+      "tree": {
+        "sha": "03b83ba5db631a2975b69fb70a1028f3236e1ba2",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/03b83ba5db631a2975b69fb70a1028f3236e1ba2"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ffa70b1eeddc2d5b3235f21f7907023da1ac4a6b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0cd532d9c11e4e8414934112567eb487e3e3e8f6",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/0cd532d9c11e4e8414934112567eb487e3e3e8f6",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/0cd532d9c11e4e8414934112567eb487e3e3e8f6"
+      }
+    ]
+  },
+  {
+    "sha": "0cd532d9c11e4e8414934112567eb487e3e3e8f6",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-12T18:01:30Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-12T18:01:30Z"
+      },
+      "message": "updated .gitignore + deleted bin folder",
+      "tree": {
+        "sha": "48be733f230583443c360bb7686abae3d52fdf64",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/48be733f230583443c360bb7686abae3d52fdf64"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/0cd532d9c11e4e8414934112567eb487e3e3e8f6",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/0cd532d9c11e4e8414934112567eb487e3e3e8f6",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/0cd532d9c11e4e8414934112567eb487e3e3e8f6",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/0cd532d9c11e4e8414934112567eb487e3e3e8f6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e70af263d1d9025c4682c3f81817f397cd226dce",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e70af263d1d9025c4682c3f81817f397cd226dce",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/e70af263d1d9025c4682c3f81817f397cd226dce"
+      }
+    ]
+  },
+  {
+    "sha": "e70af263d1d9025c4682c3f81817f397cd226dce",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-12T17:45:38Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-12T17:45:38Z"
+      },
+      "message": "xxx",
+      "tree": {
+        "sha": "f970263ef2e5281f772a744bbe23f09f07d7eed3",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/f970263ef2e5281f772a744bbe23f09f07d7eed3"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/e70af263d1d9025c4682c3f81817f397cd226dce",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e70af263d1d9025c4682c3f81817f397cd226dce",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/e70af263d1d9025c4682c3f81817f397cd226dce",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e70af263d1d9025c4682c3f81817f397cd226dce/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2938ac2ace5e113b25d3a1cf701b843db51415c3",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2938ac2ace5e113b25d3a1cf701b843db51415c3",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/2938ac2ace5e113b25d3a1cf701b843db51415c3"
+      }
+    ]
+  },
+  {
+    "sha": "2938ac2ace5e113b25d3a1cf701b843db51415c3",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-12T17:44:27Z"
+      },
+      "committer": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-02-12T17:44:27Z"
+      },
+      "message": "Device class (as proposed in RFC) + regulation classes + regulatory use\ncases",
+      "tree": {
+        "sha": "d82c2f72bd12e1003b2619cfa3c108cf55440d54",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/d82c2f72bd12e1003b2619cfa3c108cf55440d54"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/2938ac2ace5e113b25d3a1cf701b843db51415c3",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2938ac2ace5e113b25d3a1cf701b843db51415c3",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/2938ac2ace5e113b25d3a1cf701b843db51415c3",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2938ac2ace5e113b25d3a1cf701b843db51415c3/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642"
+      }
+    ]
+  },
+  {
+    "sha": "7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642",
+    "commit": {
+      "author": {
+        "name": "Nicholas Roehner",
+        "email": "n.roehner@utah.edu",
+        "date": "2013-01-29T20:23:01Z"
+      },
+      "committer": {
+        "name": "Nicholas Roehner",
+        "email": "n.roehner@utah.edu",
+        "date": "2013-01-29T20:23:01Z"
+      },
+      "message": "Merge pull request #22 from nroehner/device\n\nDevice",
+      "tree": {
+        "sha": "a873b2c546d75ccea12aa39d1d501658e85ad4cd",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/a873b2c546d75ccea12aa39d1d501658e85ad4cd"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7df5c6fffe3ac12ba881fbb9eaec6bb2c1ac4642/comments",
+    "author": {
+      "login": "nroehner",
+      "id": 674047,
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "html_url": "https://github.com/nroehner",
+      "followers_url": "https://api.github.com/users/nroehner/followers",
+      "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+      "organizations_url": "https://api.github.com/users/nroehner/orgs",
+      "repos_url": "https://api.github.com/users/nroehner/repos",
+      "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nroehner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "nroehner",
+      "id": 674047,
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "html_url": "https://github.com/nroehner",
+      "followers_url": "https://api.github.com/users/nroehner/followers",
+      "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+      "organizations_url": "https://api.github.com/users/nroehner/orgs",
+      "repos_url": "https://api.github.com/users/nroehner/repos",
+      "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nroehner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ed06ca9eb620ba539a46f23a07ba0a47de99f836"
+      },
+      {
+        "sha": "e4cf9576980e12502baaef3c2a699ace83e46a01",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e4cf9576980e12502baaef3c2a699ace83e46a01",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/e4cf9576980e12502baaef3c2a699ace83e46a01"
+      }
+    ]
+  },
+  {
+    "sha": "e4cf9576980e12502baaef3c2a699ace83e46a01",
+    "commit": {
+      "author": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-15T02:13:49Z"
+      },
+      "committer": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-15T02:13:49Z"
+      },
+      "message": "Merge pull request #19 from drdozer/fix_issue_17\n\nFix issue 17",
+      "tree": {
+        "sha": "a873b2c546d75ccea12aa39d1d501658e85ad4cd",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/a873b2c546d75ccea12aa39d1d501658e85ad4cd"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/e4cf9576980e12502baaef3c2a699ace83e46a01",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e4cf9576980e12502baaef3c2a699ace83e46a01",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/e4cf9576980e12502baaef3c2a699ace83e46a01",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e4cf9576980e12502baaef3c2a699ace83e46a01/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/2b1070015a9ab20bd83520c5579e47a20e9ba5f0"
+      },
+      {
+        "sha": "890bb4869afc408fe76286845cb963b9b007ea4c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/890bb4869afc408fe76286845cb963b9b007ea4c",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/890bb4869afc408fe76286845cb963b9b007ea4c"
+      }
+    ]
+  },
+  {
+    "sha": "890bb4869afc408fe76286845cb963b9b007ea4c",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-15T02:02:28Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-15T02:02:28Z"
+      },
+      "message": "Fairly major overhaul. The tests all pass now.",
+      "tree": {
+        "sha": "a873b2c546d75ccea12aa39d1d501658e85ad4cd",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/a873b2c546d75ccea12aa39d1d501658e85ad4cd"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/890bb4869afc408fe76286845cb963b9b007ea4c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/890bb4869afc408fe76286845cb963b9b007ea4c",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/890bb4869afc408fe76286845cb963b9b007ea4c",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/890bb4869afc408fe76286845cb963b9b007ea4c/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9"
+      }
+    ]
+  },
+  {
+    "sha": "fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-14T18:46:56Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-14T18:46:56Z"
+      },
+      "message": "This test now points to the right resource for BBaT9002.xml",
+      "tree": {
+        "sha": "c841f0a8685a22c1329b75cad9052da392e8cf53",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/c841f0a8685a22c1329b75cad9052da392e8cf53"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb5307169c18a4ff329c4bb8eeb158ee2c4a0bb9/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3f9dea86feb850d52d68b446fd35b1a514d06250",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/3f9dea86feb850d52d68b446fd35b1a514d06250",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/3f9dea86feb850d52d68b446fd35b1a514d06250"
+      }
+    ]
+  },
+  {
+    "sha": "3f9dea86feb850d52d68b446fd35b1a514d06250",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-14T18:44:58Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-14T18:44:58Z"
+      },
+      "message": "Added a copy of these files under the test data so that SBOLWriterTest can find them.",
+      "tree": {
+        "sha": "8f02deef48f364a3c592471ace9b867448f3f63c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/8f02deef48f364a3c592471ace9b867448f3f63c"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/3f9dea86feb850d52d68b446fd35b1a514d06250",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/3f9dea86feb850d52d68b446fd35b1a514d06250",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/3f9dea86feb850d52d68b446fd35b1a514d06250",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/3f9dea86feb850d52d68b446fd35b1a514d06250/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/2b1070015a9ab20bd83520c5579e47a20e9ba5f0"
+      }
+    ]
+  },
+  {
+    "sha": "2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-01-10T16:58:57Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-14T17:48:02Z"
+      },
+      "message": "fixes #17",
+      "tree": {
+        "sha": "eb1ce70676a4f5b9d249beb4e5b4cc458cf6d83a",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/eb1ce70676a4f5b9d249beb4e5b4cc458cf6d83a"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/2b1070015a9ab20bd83520c5579e47a20e9ba5f0",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2b1070015a9ab20bd83520c5579e47a20e9ba5f0/comments",
+    "author": null,
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4148652c69fa22d29ea7f6b95f469c171174d5ff",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4148652c69fa22d29ea7f6b95f469c171174d5ff",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/4148652c69fa22d29ea7f6b95f469c171174d5ff"
+      }
+    ]
+  },
+  {
+    "sha": "4148652c69fa22d29ea7f6b95f469c171174d5ff",
+    "commit": {
+      "author": {
+        "name": "Ernst Oberortner",
+        "email": "e.oberortner@gmail.com",
+        "date": "2013-01-10T16:56:49Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2013-01-14T17:47:50Z"
+      },
+      "message": "fixes #17",
+      "tree": {
+        "sha": "e49da6c7f562b931ec793d68fa7f95ffa94eabe8",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/e49da6c7f562b931ec793d68fa7f95ffa94eabe8"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/4148652c69fa22d29ea7f6b95f469c171174d5ff",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4148652c69fa22d29ea7f6b95f469c171174d5ff",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/4148652c69fa22d29ea7f6b95f469c171174d5ff",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4148652c69fa22d29ea7f6b95f469c171174d5ff/comments",
+    "author": null,
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "711fef4d1d10cc4a7739632baf1929184f7a937c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/711fef4d1d10cc4a7739632baf1929184f7a937c",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/711fef4d1d10cc4a7739632baf1929184f7a937c"
+      }
+    ]
+  },
+  {
+    "sha": "711fef4d1d10cc4a7739632baf1929184f7a937c",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T20:18:43Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T20:18:43Z"
+      },
+      "message": "Merge branch 'maven_build'",
+      "tree": {
+        "sha": "756c113152ffa86d970e3c66a2575887b012f46c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/756c113152ffa86d970e3c66a2575887b012f46c"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/711fef4d1d10cc4a7739632baf1929184f7a937c",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/711fef4d1d10cc4a7739632baf1929184f7a937c",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/711fef4d1d10cc4a7739632baf1929184f7a937c",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/711fef4d1d10cc4a7739632baf1929184f7a937c/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a3a3e9bd57370d17c2c30760bf93906fc041a82d",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a3a3e9bd57370d17c2c30760bf93906fc041a82d",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/a3a3e9bd57370d17c2c30760bf93906fc041a82d"
+      },
+      {
+        "sha": "35f5a774f9db00dfbf4d0743c3735e0762200e88",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/35f5a774f9db00dfbf4d0743c3735e0762200e88",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/35f5a774f9db00dfbf4d0743c3735e0762200e88"
+      }
+    ]
+  },
+  {
+    "sha": "a3a3e9bd57370d17c2c30760bf93906fc041a82d",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T20:17:59Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T20:17:59Z"
+      },
+      "message": "ignored target/",
+      "tree": {
+        "sha": "164017b324c7738e31d4c6704dd8d220badbc1fb",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/164017b324c7738e31d4c6704dd8d220badbc1fb"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/a3a3e9bd57370d17c2c30760bf93906fc041a82d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a3a3e9bd57370d17c2c30760bf93906fc041a82d",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/a3a3e9bd57370d17c2c30760bf93906fc041a82d",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a3a3e9bd57370d17c2c30760bf93906fc041a82d/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "673077662e6500cd45e825180d0518fcc4998086",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/673077662e6500cd45e825180d0518fcc4998086",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/673077662e6500cd45e825180d0518fcc4998086"
+      }
+    ]
+  },
+  {
+    "sha": "673077662e6500cd45e825180d0518fcc4998086",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T20:17:12Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T20:17:12Z"
+      },
+      "message": "strange diff - ;) git issues",
+      "tree": {
+        "sha": "1ad8b6b6a0bf2b4c93677d14be6d6a0ebc34bbaa",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/1ad8b6b6a0bf2b4c93677d14be6d6a0ebc34bbaa"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/673077662e6500cd45e825180d0518fcc4998086",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/673077662e6500cd45e825180d0518fcc4998086",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/673077662e6500cd45e825180d0518fcc4998086",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/673077662e6500cd45e825180d0518fcc4998086/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "39412380bb128abd589ac5f3212106db20ecef66",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/39412380bb128abd589ac5f3212106db20ecef66",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/39412380bb128abd589ac5f3212106db20ecef66"
+      }
+    ]
+  },
+  {
+    "sha": "35f5a774f9db00dfbf4d0743c3735e0762200e88",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T19:40:40Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T19:40:40Z"
+      },
+      "message": "version in pom set at 0.7.0",
+      "tree": {
+        "sha": "44d4830b1831dce3f48f59d94c7672d10984781c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/44d4830b1831dce3f48f59d94c7672d10984781c"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/35f5a774f9db00dfbf4d0743c3735e0762200e88",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/35f5a774f9db00dfbf4d0743c3735e0762200e88",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/35f5a774f9db00dfbf4d0743c3735e0762200e88",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/35f5a774f9db00dfbf4d0743c3735e0762200e88/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fa749d0c62d3c762f1fb1552d3e524a6e1df39a5",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fa749d0c62d3c762f1fb1552d3e524a6e1df39a5",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fa749d0c62d3c762f1fb1552d3e524a6e1df39a5"
+      }
+    ]
+  },
+  {
+    "sha": "39412380bb128abd589ac5f3212106db20ecef66",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T18:50:08Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T18:50:20Z"
+      },
+      "message": "swp and *~ files to ignore",
+      "tree": {
+        "sha": "4c1a09020ab92d6f759189286a6d7be7d94e15e0",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/4c1a09020ab92d6f759189286a6d7be7d94e15e0"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/39412380bb128abd589ac5f3212106db20ecef66",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/39412380bb128abd589ac5f3212106db20ecef66",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/39412380bb128abd589ac5f3212106db20ecef66",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/39412380bb128abd589ac5f3212106db20ecef66/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "03197517865d019d8d44a419aeb08950a34942db",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/03197517865d019d8d44a419aeb08950a34942db",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/03197517865d019d8d44a419aeb08950a34942db"
+      }
+    ]
+  },
+  {
+    "sha": "03197517865d019d8d44a419aeb08950a34942db",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-06-30T15:01:21Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-12-26T18:50:19Z"
+      },
+      "message": "added javadoc dir",
+      "tree": {
+        "sha": "04a017121384362b37cc76a3793b40ee6ff141f2",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/04a017121384362b37cc76a3793b40ee6ff141f2"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/03197517865d019d8d44a419aeb08950a34942db",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/03197517865d019d8d44a419aeb08950a34942db",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/03197517865d019d8d44a419aeb08950a34942db",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/03197517865d019d8d44a419aeb08950a34942db/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "78512c53b6eca04cc905bdc1d5efb08432e66b58",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/78512c53b6eca04cc905bdc1d5efb08432e66b58",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/78512c53b6eca04cc905bdc1d5efb08432e66b58"
+      }
+    ]
+  },
+  {
+    "sha": "fa749d0c62d3c762f1fb1552d3e524a6e1df39a5",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-12-10T20:30:56Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-12-10T20:30:56Z"
+      },
+      "message": "Merge branch 'master' into maven_build",
+      "tree": {
+        "sha": "c863ab75abd5005d24686e5e667478d916da435b",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/c863ab75abd5005d24686e5e667478d916da435b"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/fa749d0c62d3c762f1fb1552d3e524a6e1df39a5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fa749d0c62d3c762f1fb1552d3e524a6e1df39a5",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fa749d0c62d3c762f1fb1552d3e524a6e1df39a5",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fa749d0c62d3c762f1fb1552d3e524a6e1df39a5/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "315f86d52d6eb7a74486ea3753fb15a2ea4e62b8",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/315f86d52d6eb7a74486ea3753fb15a2ea4e62b8",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/315f86d52d6eb7a74486ea3753fb15a2ea4e62b8"
+      },
+      {
+        "sha": "b13be4b3a1674063e532b260d33dab678025b016",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/b13be4b3a1674063e532b260d33dab678025b016",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/b13be4b3a1674063e532b260d33dab678025b016"
+      }
+    ]
+  },
+  {
+    "sha": "b13be4b3a1674063e532b260d33dab678025b016",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-12-10T19:12:02Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-12-10T19:12:02Z"
+      },
+      "message": "This is the rest of the changes needed to port this project over to maven.",
+      "tree": {
+        "sha": "e400599ddb099c1bcca4258621fab60d98a3e065",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/e400599ddb099c1bcca4258621fab60d98a3e065"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/b13be4b3a1674063e532b260d33dab678025b016",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/b13be4b3a1674063e532b260d33dab678025b016",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/b13be4b3a1674063e532b260d33dab678025b016",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/b13be4b3a1674063e532b260d33dab678025b016/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "78512c53b6eca04cc905bdc1d5efb08432e66b58",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/78512c53b6eca04cc905bdc1d5efb08432e66b58",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/78512c53b6eca04cc905bdc1d5efb08432e66b58"
+      }
+    ]
+  },
+  {
+    "sha": "315f86d52d6eb7a74486ea3753fb15a2ea4e62b8",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-12-10T19:04:35Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-12-10T19:04:35Z"
+      },
+      "message": "Shuffled everything around to make it build under maven, added a pom, eccetera.\nMoved test files into test resources.\nRenamed testcase classes so that they are picked up by the maven test harness.\nModified the version.properties file so that it pickes up the property string from maven.",
+      "tree": {
+        "sha": "a28ff41c96972f9ceac0de48f37593ac5bd3f45f",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/a28ff41c96972f9ceac0de48f37593ac5bd3f45f"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/315f86d52d6eb7a74486ea3753fb15a2ea4e62b8",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/315f86d52d6eb7a74486ea3753fb15a2ea4e62b8",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/315f86d52d6eb7a74486ea3753fb15a2ea4e62b8",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/315f86d52d6eb7a74486ea3753fb15a2ea4e62b8/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "78512c53b6eca04cc905bdc1d5efb08432e66b58",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/78512c53b6eca04cc905bdc1d5efb08432e66b58",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/78512c53b6eca04cc905bdc1d5efb08432e66b58"
+      }
+    ]
+  },
+  {
+    "sha": "78512c53b6eca04cc905bdc1d5efb08432e66b58",
+    "commit": {
+      "author": {
+        "name": "Mandy Wilson",
+        "email": "mandywil@vt.edu",
+        "date": "2012-11-19T19:02:40Z"
+      },
+      "committer": {
+        "name": "Mandy Wilson",
+        "email": "mandywil@vt.edu",
+        "date": "2012-11-19T19:02:40Z"
+      },
+      "message": "Corrected ant call\n\nMinor detail, but changed \"ant clean jar teat\" to \"ant clean jar test\";\nat best, the first command didn't work, and, at worst, someone might\nhave been offended.",
+      "tree": {
+        "sha": "c27372e4b85c11f8c0d88b2ea618914afc999d49",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/c27372e4b85c11f8c0d88b2ea618914afc999d49"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/78512c53b6eca04cc905bdc1d5efb08432e66b58",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/78512c53b6eca04cc905bdc1d5efb08432e66b58",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/78512c53b6eca04cc905bdc1d5efb08432e66b58",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/78512c53b6eca04cc905bdc1d5efb08432e66b58/comments",
+    "author": {
+      "login": "mandywil",
+      "id": 276697,
+      "avatar_url": "https://avatars.githubusercontent.com/u/276697",
+      "gravatar_id": "a376f017c3a685cea63920344a76e974",
+      "url": "https://api.github.com/users/mandywil",
+      "html_url": "https://github.com/mandywil",
+      "followers_url": "https://api.github.com/users/mandywil/followers",
+      "following_url": "https://api.github.com/users/mandywil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mandywil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mandywil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mandywil/subscriptions",
+      "organizations_url": "https://api.github.com/users/mandywil/orgs",
+      "repos_url": "https://api.github.com/users/mandywil/repos",
+      "events_url": "https://api.github.com/users/mandywil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mandywil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mandywil",
+      "id": 276697,
+      "avatar_url": "https://avatars.githubusercontent.com/u/276697",
+      "gravatar_id": "a376f017c3a685cea63920344a76e974",
+      "url": "https://api.github.com/users/mandywil",
+      "html_url": "https://github.com/mandywil",
+      "followers_url": "https://api.github.com/users/mandywil/followers",
+      "following_url": "https://api.github.com/users/mandywil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mandywil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mandywil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mandywil/subscriptions",
+      "organizations_url": "https://api.github.com/users/mandywil/orgs",
+      "repos_url": "https://api.github.com/users/mandywil/repos",
+      "events_url": "https://api.github.com/users/mandywil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mandywil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ed06ca9eb620ba539a46f23a07ba0a47de99f836"
+      }
+    ]
+  },
+  {
+    "sha": "ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+    "commit": {
+      "author": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-06-30T14:49:22Z"
+      },
+      "committer": {
+        "name": "Michal Galdzicki",
+        "email": "mgaldzic@gmail.com",
+        "date": "2012-06-30T14:49:58Z"
+      },
+      "message": "updated gitignore",
+      "tree": {
+        "sha": "d8f498954400d8625efb5af80e10f11f5de6aa6c",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/d8f498954400d8625efb5af80e10f11f5de6aa6c"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ed06ca9eb620ba539a46f23a07ba0a47de99f836",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ed06ca9eb620ba539a46f23a07ba0a47de99f836/comments",
+    "author": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mgaldzic",
+      "id": 406285,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406285",
+      "gravatar_id": "5b85ba24a63f4b4b0efe811b0c44b7b0",
+      "url": "https://api.github.com/users/mgaldzic",
+      "html_url": "https://github.com/mgaldzic",
+      "followers_url": "https://api.github.com/users/mgaldzic/followers",
+      "following_url": "https://api.github.com/users/mgaldzic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mgaldzic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mgaldzic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mgaldzic/subscriptions",
+      "organizations_url": "https://api.github.com/users/mgaldzic/orgs",
+      "repos_url": "https://api.github.com/users/mgaldzic/repos",
+      "events_url": "https://api.github.com/users/mgaldzic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mgaldzic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8c9703d408e7a24ba34590af9d4a7515b9a956f2",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/8c9703d408e7a24ba34590af9d4a7515b9a956f2",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/8c9703d408e7a24ba34590af9d4a7515b9a956f2"
+      }
+    ]
+  },
+  {
+    "sha": "8c9703d408e7a24ba34590af9d4a7515b9a956f2",
+    "commit": {
+      "author": {
+        "name": "Nicholas Roehner",
+        "email": "n.roehner@utah.edu",
+        "date": "2012-06-30T00:37:03Z"
+      },
+      "committer": {
+        "name": "Nicholas Roehner",
+        "email": "n.roehner@utah.edu",
+        "date": "2012-06-30T00:37:03Z"
+      },
+      "message": "Merge pull request #12 from nroehner/master\n\nChanged import java.beans.Transient to javax.persistence.Transient to remove Java 7 dependency",
+      "tree": {
+        "sha": "76b9a244d49d4b4c02c04a8081d5dabef50351d8",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/76b9a244d49d4b4c02c04a8081d5dabef50351d8"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/8c9703d408e7a24ba34590af9d4a7515b9a956f2",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/8c9703d408e7a24ba34590af9d4a7515b9a956f2",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/8c9703d408e7a24ba34590af9d4a7515b9a956f2",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/8c9703d408e7a24ba34590af9d4a7515b9a956f2/comments",
+    "author": {
+      "login": "nroehner",
+      "id": 674047,
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "html_url": "https://github.com/nroehner",
+      "followers_url": "https://api.github.com/users/nroehner/followers",
+      "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+      "organizations_url": "https://api.github.com/users/nroehner/orgs",
+      "repos_url": "https://api.github.com/users/nroehner/repos",
+      "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nroehner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "nroehner",
+      "id": 674047,
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "html_url": "https://github.com/nroehner",
+      "followers_url": "https://api.github.com/users/nroehner/followers",
+      "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+      "organizations_url": "https://api.github.com/users/nroehner/orgs",
+      "repos_url": "https://api.github.com/users/nroehner/repos",
+      "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nroehner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/7dbf60f86edbd17c7a3b7608a2228f31695f1908"
+      },
+      {
+        "sha": "de344e68a6548ff867513aa5419abede027dfbfa",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/de344e68a6548ff867513aa5419abede027dfbfa",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/de344e68a6548ff867513aa5419abede027dfbfa"
+      }
+    ]
+  },
+  {
+    "sha": "de344e68a6548ff867513aa5419abede027dfbfa",
+    "commit": {
+      "author": {
+        "name": "U-nroehner-PC\\nroehner",
+        "email": "nroehner@nroehner-pc.(none)",
+        "date": "2012-06-24T22:51:04Z"
+      },
+      "committer": {
+        "name": "U-nroehner-PC\\nroehner",
+        "email": "nroehner@nroehner-pc.(none)",
+        "date": "2012-06-24T22:51:04Z"
+      },
+      "message": "new build file includes libraries for javax.persistence",
+      "tree": {
+        "sha": "76b9a244d49d4b4c02c04a8081d5dabef50351d8",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/76b9a244d49d4b4c02c04a8081d5dabef50351d8"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/de344e68a6548ff867513aa5419abede027dfbfa",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/de344e68a6548ff867513aa5419abede027dfbfa",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/de344e68a6548ff867513aa5419abede027dfbfa",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/de344e68a6548ff867513aa5419abede027dfbfa/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4051259d14531ed66c6785c35ffc7509ce5a2648",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4051259d14531ed66c6785c35ffc7509ce5a2648",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/4051259d14531ed66c6785c35ffc7509ce5a2648"
+      }
+    ]
+  },
+  {
+    "sha": "4051259d14531ed66c6785c35ffc7509ce5a2648",
+    "commit": {
+      "author": {
+        "name": "U-nroehner-PC\\nroehner",
+        "email": "nroehner@nroehner-pc.(none)",
+        "date": "2012-06-22T18:41:55Z"
+      },
+      "committer": {
+        "name": "U-nroehner-PC\\nroehner",
+        "email": "nroehner@nroehner-pc.(none)",
+        "date": "2012-06-22T18:41:55Z"
+      },
+      "message": "Added javax persistence jars for Transient",
+      "tree": {
+        "sha": "00e2745a1dea10778fbb7a089c9e3cb95b7e5633",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/00e2745a1dea10778fbb7a089c9e3cb95b7e5633"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/4051259d14531ed66c6785c35ffc7509ce5a2648",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4051259d14531ed66c6785c35ffc7509ce5a2648",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/4051259d14531ed66c6785c35ffc7509ce5a2648",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4051259d14531ed66c6785c35ffc7509ce5a2648/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e09f1f789eaff6ac24bca9d5aa582d180300405a",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e09f1f789eaff6ac24bca9d5aa582d180300405a",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/e09f1f789eaff6ac24bca9d5aa582d180300405a"
+      }
+    ]
+  },
+  {
+    "sha": "e09f1f789eaff6ac24bca9d5aa582d180300405a",
+    "commit": {
+      "author": {
+        "name": "U-nroehner-PC\\nroehner",
+        "email": "nroehner@nroehner-pc.(none)",
+        "date": "2012-06-22T18:37:42Z"
+      },
+      "committer": {
+        "name": "U-nroehner-PC\\nroehner",
+        "email": "nroehner@nroehner-pc.(none)",
+        "date": "2012-06-22T18:37:42Z"
+      },
+      "message": "changed import for Transient to be compatible with Java 6",
+      "tree": {
+        "sha": "151748dcde2ff3f427cc187a90820dd7aa73454a",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/151748dcde2ff3f427cc187a90820dd7aa73454a"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/e09f1f789eaff6ac24bca9d5aa582d180300405a",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e09f1f789eaff6ac24bca9d5aa582d180300405a",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/e09f1f789eaff6ac24bca9d5aa582d180300405a",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e09f1f789eaff6ac24bca9d5aa582d180300405a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/7dbf60f86edbd17c7a3b7608a2228f31695f1908"
+      }
+    ]
+  },
+  {
+    "sha": "7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+    "commit": {
+      "author": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-06-05T23:07:17Z"
+      },
+      "committer": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-06-05T23:07:17Z"
+      },
+      "message": "The document implementation class now is an SBOL resolver which makes available all entities in the document.",
+      "tree": {
+        "sha": "8369bae4f2bde97ea9c7f49e3ff59656fb9ab1aa",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/8369bae4f2bde97ea9c7f49e3ff59656fb9ab1aa"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/7dbf60f86edbd17c7a3b7608a2228f31695f1908",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/7dbf60f86edbd17c7a3b7608a2228f31695f1908/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "439bc5ebceaa10421a654799649a0e20117541f9",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/439bc5ebceaa10421a654799649a0e20117541f9",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/439bc5ebceaa10421a654799649a0e20117541f9"
+      }
+    ]
+  },
+  {
+    "sha": "439bc5ebceaa10421a654799649a0e20117541f9",
+    "commit": {
+      "author": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-06-05T22:44:14Z"
+      },
+      "committer": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-06-05T22:44:14Z"
+      },
+      "message": "Added SBOLNamedObject to capture things with names, displayIds and descriptions.\nAltered UriResolver and DisplayIdResolver to constrain them to SBOLObject and SBOLNamedObject respectively.",
+      "tree": {
+        "sha": "2020c0423b5b1e34b595b60e44f71fbe1c65114e",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/2020c0423b5b1e34b595b60e44f71fbe1c65114e"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/439bc5ebceaa10421a654799649a0e20117541f9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/439bc5ebceaa10421a654799649a0e20117541f9",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/439bc5ebceaa10421a654799649a0e20117541f9",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/439bc5ebceaa10421a654799649a0e20117541f9/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "254158c644d5b432f14592cddc56b3155ab869fa",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/254158c644d5b432f14592cddc56b3155ab869fa",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/254158c644d5b432f14592cddc56b3155ab869fa"
+      }
+    ]
+  },
+  {
+    "sha": "254158c644d5b432f14592cddc56b3155ab869fa",
+    "commit": {
+      "author": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-06-05T20:40:34Z"
+      },
+      "committer": {
+        "name": "Matthew Pocock",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-06-05T20:40:34Z"
+      },
+      "message": "Initial proposal for resolvers API.\nIt was necessary to implement instance merging to support this functionality.",
+      "tree": {
+        "sha": "3a2a2f134d1aadcb48363fdd00367453cfa4dbf6",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/3a2a2f134d1aadcb48363fdd00367453cfa4dbf6"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/254158c644d5b432f14592cddc56b3155ab869fa",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/254158c644d5b432f14592cddc56b3155ab869fa",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/254158c644d5b432f14592cddc56b3155ab869fa",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/254158c644d5b432f14592cddc56b3155ab869fa/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5"
+      }
+    ]
+  },
+  {
+    "sha": "cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-27T14:56:45Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-27T14:56:45Z"
+      },
+      "message": "Merge pull request #2 from drdozer/issues-1\n\nIssues 1",
+      "tree": {
+        "sha": "f7d04b5ad9911c7798c3125650ff4028a58cc2df",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/f7d04b5ad9911c7798c3125650ff4028a58cc2df"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/cdeb7cfd544b5ba26ad1a35d6359d4163ce516d5/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/16209ebdbed6e8b0300ffba1f8d55ea86beae837"
+      },
+      {
+        "sha": "ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd"
+      }
+    ]
+  },
+  {
+    "sha": "ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-03-22T15:24:33Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-03-22T15:24:33Z"
+      },
+      "message": "Removed reference to teh offending namespace prefix mapper sun internal class and added the corresponding @XmlSchema annotation to the package. Compiles and passes test under javac 1.7.0_147",
+      "tree": {
+        "sha": "f7d04b5ad9911c7798c3125650ff4028a58cc2df",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/f7d04b5ad9911c7798c3125650ff4028a58cc2df"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/ff5029c2f1496f4d9d2d22bebbb467b67ce31fdd/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4ea952c03ccbddc771c89be02fc165a450917cfa",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4ea952c03ccbddc771c89be02fc165a450917cfa",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/4ea952c03ccbddc771c89be02fc165a450917cfa"
+      }
+    ]
+  },
+  {
+    "sha": "4ea952c03ccbddc771c89be02fc165a450917cfa",
+    "commit": {
+      "author": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-03-22T15:18:23Z"
+      },
+      "committer": {
+        "name": "=",
+        "email": "turingatemyhamster@gmail.com",
+        "date": "2012-03-22T15:18:23Z"
+      },
+      "message": "Added ignore for intellij idea files and directories.",
+      "tree": {
+        "sha": "880cdb12b417d30d8361d33a8ed02f1635cbf90a",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/880cdb12b417d30d8361d33a8ed02f1635cbf90a"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/4ea952c03ccbddc771c89be02fc165a450917cfa",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4ea952c03ccbddc771c89be02fc165a450917cfa",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/4ea952c03ccbddc771c89be02fc165a450917cfa",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4ea952c03ccbddc771c89be02fc165a450917cfa/comments",
+    "author": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "drdozer",
+      "id": 583516,
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "html_url": "https://github.com/drdozer",
+      "followers_url": "https://api.github.com/users/drdozer/followers",
+      "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdozer/orgs",
+      "repos_url": "https://api.github.com/users/drdozer/repos",
+      "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdozer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/16209ebdbed6e8b0300ffba1f8d55ea86beae837"
+      }
+    ]
+  },
+  {
+    "sha": "16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-22T02:24:54Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-22T02:24:54Z"
+      },
+      "message": "Support for multiple occurrences of same object in different places (e.g. same DnaComponent in multiple collections)\nReader implementation merges multiple occurrences of same object if they are equal\nValidator does not complain about multiple occurrences of same object (unless there are cyclic references)",
+      "tree": {
+        "sha": "b6366bfb7cc73f497d274f1909b1de93e8d919bb",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/b6366bfb7cc73f497d274f1909b1de93e8d919bb"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/16209ebdbed6e8b0300ffba1f8d55ea86beae837",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/16209ebdbed6e8b0300ffba1f8d55ea86beae837/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a7f486935dde622b4a388f038f2508a6f58b0fe9",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a7f486935dde622b4a388f038f2508a6f58b0fe9",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/a7f486935dde622b4a388f038f2508a6f58b0fe9"
+      }
+    ]
+  },
+  {
+    "sha": "a7f486935dde622b4a388f038f2508a6f58b0fe9",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T03:49:53Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T03:49:53Z"
+      },
+      "message": "add .gitignore file",
+      "tree": {
+        "sha": "4bee36d81140a505cd8f0dc24b7bb3f3d8c4f4e4",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/4bee36d81140a505cd8f0dc24b7bb3f3d8c4f4e4"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/a7f486935dde622b4a388f038f2508a6f58b0fe9",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a7f486935dde622b4a388f038f2508a6f58b0fe9",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/a7f486935dde622b4a388f038f2508a6f58b0fe9",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a7f486935dde622b4a388f038f2508a6f58b0fe9/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fd49de92f47e3ad6473ea925c412241f4fa8473d",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fd49de92f47e3ad6473ea925c412241f4fa8473d",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fd49de92f47e3ad6473ea925c412241f4fa8473d"
+      }
+    ]
+  },
+  {
+    "sha": "fd49de92f47e3ad6473ea925c412241f4fa8473d",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T03:14:13Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T03:14:13Z"
+      },
+      "message": "fix test lib dir in build.xml",
+      "tree": {
+        "sha": "6bad1d1bea9613f5d52644615c9f5ebb3f6a2cec",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/6bad1d1bea9613f5d52644615c9f5ebb3f6a2cec"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/fd49de92f47e3ad6473ea925c412241f4fa8473d",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fd49de92f47e3ad6473ea925c412241f4fa8473d",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/fd49de92f47e3ad6473ea925c412241f4fa8473d",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fd49de92f47e3ad6473ea925c412241f4fa8473d/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "367e3a400bf211ac496df43437265006c0981835",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/367e3a400bf211ac496df43437265006c0981835",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/367e3a400bf211ac496df43437265006c0981835"
+      }
+    ]
+  },
+  {
+    "sha": "367e3a400bf211ac496df43437265006c0981835",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T03:03:08Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T03:08:09Z"
+      },
+      "message": "Use libSBOLj name consistenly",
+      "tree": {
+        "sha": "72a7ac5838d4169fd3b69f6fdc5bc1e720a4d41e",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/72a7ac5838d4169fd3b69f6fdc5bc1e720a4d41e"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/367e3a400bf211ac496df43437265006c0981835",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/367e3a400bf211ac496df43437265006c0981835",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/367e3a400bf211ac496df43437265006c0981835",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/367e3a400bf211ac496df43437265006c0981835/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1f65c72ba4b3adf75c40e4b92eed62cbef68ce46",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/1f65c72ba4b3adf75c40e4b92eed62cbef68ce46",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/1f65c72ba4b3adf75c40e4b92eed62cbef68ce46"
+      }
+    ]
+  },
+  {
+    "sha": "1f65c72ba4b3adf75c40e4b92eed62cbef68ce46",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T02:48:52Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T02:48:52Z"
+      },
+      "message": "remove bin directory that was added by mistake",
+      "tree": {
+        "sha": "f9abc6bdd520491ef68f69fad2328777108092b3",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/f9abc6bdd520491ef68f69fad2328777108092b3"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/1f65c72ba4b3adf75c40e4b92eed62cbef68ce46",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/1f65c72ba4b3adf75c40e4b92eed62cbef68ce46",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/1f65c72ba4b3adf75c40e4b92eed62cbef68ce46",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/1f65c72ba4b3adf75c40e4b92eed62cbef68ce46/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/commit/f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a"
+      }
+    ]
+  },
+  {
+    "sha": "f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a",
+    "commit": {
+      "author": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T02:30:27Z"
+      },
+      "committer": {
+        "name": "Evren Sirin",
+        "email": "evren@clarkparsia.com",
+        "date": "2012-03-08T02:30:27Z"
+      },
+      "message": "New Java library implementation for SBOL\nExtended object model based on the clases from libSBOLcore project\nXML schema that defines serialization syntax (compatible with RDF/XML)\nReader and writer implementation for SBOL using JAXB\nValidator implementation that checks XML schema compatibility and additional constratins from SBOL specification\nHuman-friendly presentation syntax for outputting SBOL objects\nCLI program to perform validation\nExample programs showing how to use the API\nUnit tests for checking correctness",
+      "tree": {
+        "sha": "26a6caa0275177647f61ece14de260e71da4ed84",
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/26a6caa0275177647f61ece14de260e71da4ed84"
+      },
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a",
+      "comment_count": 0
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a",
+    "html_url": "https://github.com/SynBioDex/libSBOLj/commit/f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a",
+    "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f829d2bdcd8f0ccd9f690d4cf59cdd2f9781819a/comments",
+    "author": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "evren",
+      "id": 411628,
+      "avatar_url": "https://avatars.githubusercontent.com/u/411628",
+      "gravatar_id": "09b753c1545d51c21645289827f6ed28",
+      "url": "https://api.github.com/users/evren",
+      "html_url": "https://github.com/evren",
+      "followers_url": "https://api.github.com/users/evren/followers",
+      "following_url": "https://api.github.com/users/evren/following{/other_user}",
+      "gists_url": "https://api.github.com/users/evren/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/evren/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/evren/subscriptions",
+      "organizations_url": "https://api.github.com/users/evren/orgs",
+      "repos_url": "https://api.github.com/users/evren/repos",
+      "events_url": "https://api.github.com/users/evren/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/evren/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+
+    ]
+  }
+]

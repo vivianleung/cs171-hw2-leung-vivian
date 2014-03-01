@@ -1,0 +1,2392 @@
+[
+  {
+    "id": "1998914334",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 6550605,
+      "login": "vivianleung",
+      "gravatar_id": "2ed2a67bcf1e29cbc26c3d02cd57986b",
+      "url": "https://api.github.com/users/vivianleung",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6550605"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "forkee": {
+        "id": 17305294,
+        "name": "libSBOLj",
+        "full_name": "vivianleung/libSBOLj",
+        "owner": {
+          "login": "vivianleung",
+          "id": 6550605,
+          "avatar_url": "https://avatars.githubusercontent.com/u/6550605",
+          "gravatar_id": "2ed2a67bcf1e29cbc26c3d02cd57986b",
+          "url": "https://api.github.com/users/vivianleung",
+          "html_url": "https://github.com/vivianleung",
+          "followers_url": "https://api.github.com/users/vivianleung/followers",
+          "following_url": "https://api.github.com/users/vivianleung/following{/other_user}",
+          "gists_url": "https://api.github.com/users/vivianleung/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/vivianleung/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/vivianleung/subscriptions",
+          "organizations_url": "https://api.github.com/users/vivianleung/orgs",
+          "repos_url": "https://api.github.com/users/vivianleung/repos",
+          "events_url": "https://api.github.com/users/vivianleung/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/vivianleung/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/vivianleung/libSBOLj",
+        "description": "Java Library for Synthetic Biology Open Language (SBOL) ",
+        "fork": true,
+        "url": "https://api.github.com/repos/vivianleung/libSBOLj",
+        "forks_url": "https://api.github.com/repos/vivianleung/libSBOLj/forks",
+        "keys_url": "https://api.github.com/repos/vivianleung/libSBOLj/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/vivianleung/libSBOLj/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/vivianleung/libSBOLj/teams",
+        "hooks_url": "https://api.github.com/repos/vivianleung/libSBOLj/hooks",
+        "issue_events_url": "https://api.github.com/repos/vivianleung/libSBOLj/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/vivianleung/libSBOLj/events",
+        "assignees_url": "https://api.github.com/repos/vivianleung/libSBOLj/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/vivianleung/libSBOLj/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/vivianleung/libSBOLj/tags",
+        "blobs_url": "https://api.github.com/repos/vivianleung/libSBOLj/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/vivianleung/libSBOLj/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/vivianleung/libSBOLj/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/vivianleung/libSBOLj/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/vivianleung/libSBOLj/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/vivianleung/libSBOLj/languages",
+        "stargazers_url": "https://api.github.com/repos/vivianleung/libSBOLj/stargazers",
+        "contributors_url": "https://api.github.com/repos/vivianleung/libSBOLj/contributors",
+        "subscribers_url": "https://api.github.com/repos/vivianleung/libSBOLj/subscribers",
+        "subscription_url": "https://api.github.com/repos/vivianleung/libSBOLj/subscription",
+        "commits_url": "https://api.github.com/repos/vivianleung/libSBOLj/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/vivianleung/libSBOLj/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/vivianleung/libSBOLj/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/vivianleung/libSBOLj/issues/comments/{number}",
+        "contents_url": "https://api.github.com/repos/vivianleung/libSBOLj/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/vivianleung/libSBOLj/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/vivianleung/libSBOLj/merges",
+        "archive_url": "https://api.github.com/repos/vivianleung/libSBOLj/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/vivianleung/libSBOLj/downloads",
+        "issues_url": "https://api.github.com/repos/vivianleung/libSBOLj/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/vivianleung/libSBOLj/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/vivianleung/libSBOLj/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/vivianleung/libSBOLj/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/vivianleung/libSBOLj/labels{/name}",
+        "releases_url": "https://api.github.com/repos/vivianleung/libSBOLj/releases{/id}",
+        "created_at": "2014-03-01T01:49:14Z",
+        "updated_at": "2014-03-01T01:49:14Z",
+        "pushed_at": "2014-01-08T21:23:50Z",
+        "git_url": "git://github.com/vivianleung/libSBOLj.git",
+        "ssh_url": "git@github.com:vivianleung/libSBOLj.git",
+        "clone_url": "https://github.com/vivianleung/libSBOLj.git",
+        "svn_url": "https://github.com/vivianleung/libSBOLj",
+        "homepage": "",
+        "size": 1179,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "Java",
+        "has_issues": false,
+        "has_downloads": true,
+        "has_wiki": true,
+        "forks_count": 0,
+        "mirror_url": null,
+        "open_issues_count": 0,
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master",
+        "master_branch": "master",
+        "public": true
+      }
+    },
+    "public": true,
+    "created_at": "2014-03-01T01:49:14Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996796704",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/57",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/57/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/57/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/57/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/57",
+        "id": 28435585,
+        "number": 57,
+        "title": "Check Type Conversion Table",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T17:03:00Z",
+        "updated_at": "2014-02-27T17:03:00Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Make sure that most recent version of the SO-feature-Pigeon type conversion table is linked under \"Resources\" sub-section of \"SBOL Standard\" section on website."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T17:03:00Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996783841",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/56",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/56/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/56/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/56/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/56",
+        "id": 28434906,
+        "number": 56,
+        "title": "Update SBOL Visual Website Page",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:55:04Z",
+        "updated_at": "2014-02-27T16:55:04Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Update \"SBOL Visual\" section of website, including organization, link consistency, explanation of goals, and how to guide (manual, implementation via Pigeon, Graphviz)."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:55:04Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996775689",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/55",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/55/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/55/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/55/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/55",
+        "id": 28434453,
+        "number": 55,
+        "title": "Update Sponsorship Page",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:50:02Z",
+        "updated_at": "2014-02-27T16:50:02Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Update \"Sponsorship\" section of SBOL website."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:50:02Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996772635",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/54",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/54/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/54/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/54/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/54",
+        "id": 28434266,
+        "number": 54,
+        "title": "Make Website Page for SBOL 10",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:48:07Z",
+        "updated_at": "2014-02-27T16:48:07Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Make page for SBOL 10 (Berkeley workshop 01/09/2014) under \"Meetings\" sub-section of \"Community\" and add link to notes/agenda on Google Drive."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:48:08Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996763334",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/53",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/53/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/53/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/53/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/53",
+        "id": 28433791,
+        "number": 53,
+        "title": "Update SBOL Working Groups",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:42:14Z",
+        "updated_at": "2014-02-27T16:42:14Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Update SBOL Working Groups\" sub-section of \"Community\" section of website. Will likely require a reassessment of who is working on what and a call for volunteers to work on projects with little support."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:42:16Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996757679",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/52",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/52/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/52/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/52/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/52",
+        "id": 28433482,
+        "number": 52,
+        "title": "Update Extensions Page ",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:38:51Z",
+        "updated_at": "2014-02-27T16:38:51Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Update \"Extensions\" page on SBOL website and make it consistent with the structure for SBOL 2.0 agreed upon at SBOL 10 (Berkeley workshop 01/09/2014). Link to UML for SBOL 2.0 forthcoming."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:38:51Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996743562",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/51",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/51/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/51/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/51/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/51",
+        "id": 28432800,
+        "number": 51,
+        "title": "Adding Past Editors",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:30:14Z",
+        "updated_at": "2014-02-27T16:30:14Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Add past editors to \"Governance\" sub-section of \"Community\" section on website."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:30:15Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996734224",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/50",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/50/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/50/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/50/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/50",
+        "id": 28432326,
+        "number": 50,
+        "title": "Link to SBOL Validator",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:24:45Z",
+        "updated_at": "2014-02-27T16:24:45Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Add link to Newcastle's SBOL validation service, perhaps under \"Serialization\" sub-section of the \"libSBOL\" section."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:24:45Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996720709",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/49",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/49/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/49/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/49/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/49",
+        "id": 28431665,
+        "number": 49,
+        "title": "NBT Demonstration Examples",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:16:28Z",
+        "updated_at": "2014-02-27T16:16:28Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "Put all example SBOL files from NBT demonstration on website under new \"Examples\" sub-section for the \"SBOL Standard\" section."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:16:28Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996716347",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/48",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/48/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/48/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/48/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/48",
+        "id": 28431440,
+        "number": 48,
+        "title": "NBT Citation",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:13:58Z",
+        "updated_at": "2014-02-27T16:13:58Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "The recently accepted NBT paper should be at the top of the \"Publications\" section of the website with a message to the effect of \"to cite SBOL, cite this paper.\""
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:13:59Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996712171",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/47",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/47/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/47/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/47/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/47",
+        "id": 28431268,
+        "number": 47,
+        "title": "Downloadable Logo",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/website",
+            "name": "website",
+            "color": "fbca04"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-27T16:11:56Z",
+        "updated_at": "2014-02-27T16:11:56Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "The SBOL logo should be downloadable from \"About\" section of the SBOL website."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:11:56Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996707381",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/46",
+        "id": 27093229,
+        "number": 46,
+        "title": "Errors with SBOLReader and JAXB",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "closed",
+        "assignee": null,
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2014-02-06T22:45:03Z",
+        "updated_at": "2014-02-27T16:09:14Z",
+        "closed_at": "2014-02-27T16:09:14Z",
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "I'm experiencing the following errors when calling SBOLReaderImpl.read in the latest version of libSBOLj. \r\n\r\njava.lang.NoSuchMethodError: org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar([Lorg/apache/xerces/xni/parser/XMLInputSource;)V\r\n\tat org.apache.xerces.jaxp.validation.XMLSchemaFactory.newSchema(Unknown Source)\r\n\tat org.sbolstandard.core.impl.JAXB.<clinit>(JAXB.java:72)\r\n\tat org.sbolstandard.core.impl.SBOLReaderImpl.read(SBOLReaderImpl.java:58)\r\n\tat org.sbolstandard.core.SBOLFactory.read(SBOLFactory.java:57)\r\n\t\r\njava.lang.NoClassDefFoundError: Could not initialize class org.sbolstandard.core.impl.JAXB\r\n\tat org.sbolstandard.core.impl.SBOLReaderImpl.read(SBOLReaderImpl.java:58)\r\n\tat org.sbolstandard.core.SBOLFactory.read(SBOLFactory.java:57)\r\n\t"
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:09:14Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1996707379",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/46",
+        "id": 27093229,
+        "number": 46,
+        "title": "Errors with SBOLReader and JAXB",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "closed",
+        "assignee": null,
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2014-02-06T22:45:03Z",
+        "updated_at": "2014-02-27T16:09:14Z",
+        "closed_at": "2014-02-27T16:09:14Z",
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "I'm experiencing the following errors when calling SBOLReaderImpl.read in the latest version of libSBOLj. \r\n\r\njava.lang.NoSuchMethodError: org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar([Lorg/apache/xerces/xni/parser/XMLInputSource;)V\r\n\tat org.apache.xerces.jaxp.validation.XMLSchemaFactory.newSchema(Unknown Source)\r\n\tat org.sbolstandard.core.impl.JAXB.<clinit>(JAXB.java:72)\r\n\tat org.sbolstandard.core.impl.SBOLReaderImpl.read(SBOLReaderImpl.java:58)\r\n\tat org.sbolstandard.core.SBOLFactory.read(SBOLFactory.java:57)\r\n\t\r\njava.lang.NoClassDefFoundError: Could not initialize class org.sbolstandard.core.impl.JAXB\r\n\tat org.sbolstandard.core.impl.SBOLReaderImpl.read(SBOLReaderImpl.java:58)\r\n\tat org.sbolstandard.core.SBOLFactory.read(SBOLFactory.java:57)\r\n\t"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/comments/36258110",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/46#issuecomment-36258110",
+        "issue_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46",
+        "id": 36258110,
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2014-02-27T16:09:13Z",
+        "updated_at": "2014-02-27T16:09:13Z",
+        "body": "Problem was due to having two versions of xerces library, one of which lacked methods required by libSBOLj when invoking xerces from its JAXB class."
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-27T16:09:14Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1971315816",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 674047,
+      "login": "nroehner",
+      "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+      "url": "https://api.github.com/users/nroehner",
+      "avatar_url": "https://avatars.githubusercontent.com/u/674047"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/46/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/46",
+        "id": 27093229,
+        "number": 46,
+        "title": "Errors with SBOLReader and JAXB",
+        "user": {
+          "login": "nroehner",
+          "id": 674047,
+          "avatar_url": "https://gravatar.com/avatar/681a5669009b212cb2aab1cf53b591d2?d=https%3A%2F%2Fidenticons.github.com%2F9b799775834bf50337125fde3e86bd8c.png&r=x",
+          "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+          "url": "https://api.github.com/users/nroehner",
+          "html_url": "https://github.com/nroehner",
+          "followers_url": "https://api.github.com/users/nroehner/followers",
+          "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+          "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+          "organizations_url": "https://api.github.com/users/nroehner/orgs",
+          "repos_url": "https://api.github.com/users/nroehner/repos",
+          "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/nroehner/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-02-06T22:45:03Z",
+        "updated_at": "2014-02-06T22:45:03Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "I'm experiencing the following errors when calling SBOLReaderImpl.read in the latest version of libSBOLj. \r\n\r\njava.lang.NoSuchMethodError: org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar([Lorg/apache/xerces/xni/parser/XMLInputSource;)V\r\n\tat org.apache.xerces.jaxp.validation.XMLSchemaFactory.newSchema(Unknown Source)\r\n\tat org.sbolstandard.core.impl.JAXB.<clinit>(JAXB.java:72)\r\n\tat org.sbolstandard.core.impl.SBOLReaderImpl.read(SBOLReaderImpl.java:58)\r\n\tat org.sbolstandard.core.SBOLFactory.read(SBOLFactory.java:57)\r\n\t\r\njava.lang.NoClassDefFoundError: Could not initialize class org.sbolstandard.core.impl.JAXB\r\n\tat org.sbolstandard.core.impl.SBOLReaderImpl.read(SBOLReaderImpl.java:58)\r\n\tat org.sbolstandard.core.SBOLFactory.read(SBOLFactory.java:57)\r\n\t"
+      }
+    },
+    "public": true,
+    "created_at": "2014-02-06T22:45:03Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1963648066",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 1881473,
+      "login": "owengilfellon",
+      "gravatar_id": "98cb47c52e77247f7c37be194b6eb858",
+      "url": "https://api.github.com/users/owengilfellon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1881473"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "forkee": {
+        "id": 16407884,
+        "name": "libSBOLj",
+        "full_name": "owengilfellon/libSBOLj",
+        "owner": {
+          "login": "owengilfellon",
+          "id": 1881473,
+          "avatar_url": "https://gravatar.com/avatar/98cb47c52e77247f7c37be194b6eb858?d=https%3A%2F%2Fidenticons.github.com%2F50782078eb925d3d689603f9d6a05c57.png&r=x",
+          "gravatar_id": "98cb47c52e77247f7c37be194b6eb858",
+          "url": "https://api.github.com/users/owengilfellon",
+          "html_url": "https://github.com/owengilfellon",
+          "followers_url": "https://api.github.com/users/owengilfellon/followers",
+          "following_url": "https://api.github.com/users/owengilfellon/following{/other_user}",
+          "gists_url": "https://api.github.com/users/owengilfellon/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/owengilfellon/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/owengilfellon/subscriptions",
+          "organizations_url": "https://api.github.com/users/owengilfellon/orgs",
+          "repos_url": "https://api.github.com/users/owengilfellon/repos",
+          "events_url": "https://api.github.com/users/owengilfellon/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/owengilfellon/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/owengilfellon/libSBOLj",
+        "description": "Java Library for Synthetic Biology Open Language (SBOL) ",
+        "fork": true,
+        "url": "https://api.github.com/repos/owengilfellon/libSBOLj",
+        "forks_url": "https://api.github.com/repos/owengilfellon/libSBOLj/forks",
+        "keys_url": "https://api.github.com/repos/owengilfellon/libSBOLj/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/owengilfellon/libSBOLj/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/owengilfellon/libSBOLj/teams",
+        "hooks_url": "https://api.github.com/repos/owengilfellon/libSBOLj/hooks",
+        "issue_events_url": "https://api.github.com/repos/owengilfellon/libSBOLj/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/owengilfellon/libSBOLj/events",
+        "assignees_url": "https://api.github.com/repos/owengilfellon/libSBOLj/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/owengilfellon/libSBOLj/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/owengilfellon/libSBOLj/tags",
+        "blobs_url": "https://api.github.com/repos/owengilfellon/libSBOLj/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/owengilfellon/libSBOLj/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/owengilfellon/libSBOLj/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/owengilfellon/libSBOLj/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/owengilfellon/libSBOLj/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/owengilfellon/libSBOLj/languages",
+        "stargazers_url": "https://api.github.com/repos/owengilfellon/libSBOLj/stargazers",
+        "contributors_url": "https://api.github.com/repos/owengilfellon/libSBOLj/contributors",
+        "subscribers_url": "https://api.github.com/repos/owengilfellon/libSBOLj/subscribers",
+        "subscription_url": "https://api.github.com/repos/owengilfellon/libSBOLj/subscription",
+        "commits_url": "https://api.github.com/repos/owengilfellon/libSBOLj/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/owengilfellon/libSBOLj/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/owengilfellon/libSBOLj/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/owengilfellon/libSBOLj/issues/comments/{number}",
+        "contents_url": "https://api.github.com/repos/owengilfellon/libSBOLj/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/owengilfellon/libSBOLj/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/owengilfellon/libSBOLj/merges",
+        "archive_url": "https://api.github.com/repos/owengilfellon/libSBOLj/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/owengilfellon/libSBOLj/downloads",
+        "issues_url": "https://api.github.com/repos/owengilfellon/libSBOLj/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/owengilfellon/libSBOLj/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/owengilfellon/libSBOLj/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/owengilfellon/libSBOLj/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/owengilfellon/libSBOLj/labels{/name}",
+        "releases_url": "https://api.github.com/repos/owengilfellon/libSBOLj/releases{/id}",
+        "created_at": "2014-01-31T12:52:21Z",
+        "updated_at": "2014-01-08T21:23:51Z",
+        "pushed_at": "2014-01-08T21:23:50Z",
+        "git_url": "git://github.com/owengilfellon/libSBOLj.git",
+        "ssh_url": "git@github.com:owengilfellon/libSBOLj.git",
+        "clone_url": "https://github.com/owengilfellon/libSBOLj.git",
+        "svn_url": "https://github.com/owengilfellon/libSBOLj",
+        "homepage": "",
+        "size": 1179,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": "Java",
+        "has_issues": false,
+        "has_downloads": true,
+        "has_wiki": true,
+        "forks_count": 0,
+        "mirror_url": null,
+        "open_issues_count": 0,
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master",
+        "master_branch": "master",
+        "public": true
+      }
+    },
+    "public": true,
+    "created_at": "2014-01-31T12:52:21Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1937880242",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 287284225,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/feature/system",
+      "head": "510b5346716a60dfaed71043d699450ad7ac3dfd",
+      "before": "f92f28ab1e30f487074c57c59dc90583d8bdc289",
+      "commits": [
+        {
+          "sha": "de000ee8e9e3ddcd2c1cfed8bc31409ab8226eb7",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Fixed the SystemRdfPickler inheritance",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/de000ee8e9e3ddcd2c1cfed8bc31409ab8226eb7"
+        },
+        {
+          "sha": "510b5346716a60dfaed71043d699450ad7ac3dfd",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Updated the serialisation classes",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/510b5346716a60dfaed71043d699450ad7ac3dfd"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2014-01-08T21:23:50Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1936288449",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 583516,
+      "login": "drdozer",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/45",
+        "id": 25182328,
+        "number": 45,
+        "title": "sbol example issue ",
+        "user": {
+          "login": "drdozer",
+          "id": 583516,
+          "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+          "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+          "url": "https://api.github.com/users/drdozer",
+          "html_url": "https://github.com/drdozer",
+          "followers_url": "https://api.github.com/users/drdozer/followers",
+          "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+          "organizations_url": "https://api.github.com/users/drdozer/orgs",
+          "repos_url": "https://api.github.com/users/drdozer/repos",
+          "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/drdozer/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/invalid",
+            "name": "invalid",
+            "color": "e6e6e6"
+          }
+        ],
+        "state": "closed",
+        "assignee": null,
+        "milestone": {
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/milestones/1",
+          "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/milestones/1/labels",
+          "id": 525879,
+          "number": 1,
+          "title": "SBOL 2.0",
+          "description": "Version 2 of SBOL. A new standard, a new libSBOLj.",
+          "creator": {
+            "login": "drdozer",
+            "id": 583516,
+            "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+            "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+            "url": "https://api.github.com/users/drdozer",
+            "html_url": "https://github.com/drdozer",
+            "followers_url": "https://api.github.com/users/drdozer/followers",
+            "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+            "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+            "organizations_url": "https://api.github.com/users/drdozer/orgs",
+            "repos_url": "https://api.github.com/users/drdozer/repos",
+            "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/drdozer/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 1,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2014-01-03T16:20:39Z",
+          "updated_at": "2014-01-07T17:28:01Z",
+          "due_on": "2015-01-01T08:00:00Z"
+        },
+        "comments": 1,
+        "created_at": "2014-01-07T17:26:50Z",
+        "updated_at": "2014-01-07T17:28:01Z",
+        "closed_at": "2014-01-07T17:28:01Z",
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "I made this because I cuold"
+      }
+    },
+    "public": true,
+    "created_at": "2014-01-07T17:28:01Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1936287534",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 583516,
+      "login": "drdozer",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/45",
+        "id": 25182328,
+        "number": 45,
+        "title": "sbol example issue ",
+        "user": {
+          "login": "drdozer",
+          "id": 583516,
+          "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+          "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+          "url": "https://api.github.com/users/drdozer",
+          "html_url": "https://github.com/drdozer",
+          "followers_url": "https://api.github.com/users/drdozer/followers",
+          "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+          "organizations_url": "https://api.github.com/users/drdozer/orgs",
+          "repos_url": "https://api.github.com/users/drdozer/repos",
+          "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/drdozer/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": {
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/milestones/1",
+          "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/milestones/1/labels",
+          "id": 525879,
+          "number": 1,
+          "title": "SBOL 2.0",
+          "description": "Version 2 of SBOL. A new standard, a new libSBOLj.",
+          "creator": {
+            "login": "drdozer",
+            "id": 583516,
+            "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+            "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+            "url": "https://api.github.com/users/drdozer",
+            "html_url": "https://github.com/drdozer",
+            "followers_url": "https://api.github.com/users/drdozer/followers",
+            "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+            "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+            "organizations_url": "https://api.github.com/users/drdozer/orgs",
+            "repos_url": "https://api.github.com/users/drdozer/repos",
+            "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/drdozer/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 2,
+          "closed_issues": 0,
+          "state": "open",
+          "created_at": "2014-01-03T16:20:39Z",
+          "updated_at": "2014-01-07T17:27:07Z",
+          "due_on": "2015-01-01T08:00:00Z"
+        },
+        "comments": 1,
+        "created_at": "2014-01-07T17:26:50Z",
+        "updated_at": "2014-01-07T17:27:15Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "I made this because I cuold"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/comments/31758479",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/45#issuecomment-31758479",
+        "issue_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45",
+        "id": 31758479,
+        "user": {
+          "login": "drdozer",
+          "id": 583516,
+          "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+          "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+          "url": "https://api.github.com/users/drdozer",
+          "html_url": "https://github.com/drdozer",
+          "followers_url": "https://api.github.com/users/drdozer/followers",
+          "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+          "organizations_url": "https://api.github.com/users/drdozer/orgs",
+          "repos_url": "https://api.github.com/users/drdozer/repos",
+          "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/drdozer/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2014-01-07T17:27:15Z",
+        "updated_at": "2014-01-07T17:27:15Z",
+        "body": "oops"
+      }
+    },
+    "public": true,
+    "created_at": "2014-01-07T17:27:15Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1936287024",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 583516,
+      "login": "drdozer",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/45/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/45",
+        "id": 25182328,
+        "number": 45,
+        "title": "sbol example issue ",
+        "user": {
+          "login": "drdozer",
+          "id": 583516,
+          "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+          "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+          "url": "https://api.github.com/users/drdozer",
+          "html_url": "https://github.com/drdozer",
+          "followers_url": "https://api.github.com/users/drdozer/followers",
+          "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+          "organizations_url": "https://api.github.com/users/drdozer/orgs",
+          "repos_url": "https://api.github.com/users/drdozer/repos",
+          "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/drdozer/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2014-01-07T17:26:50Z",
+        "updated_at": "2014-01-07T17:26:50Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "I made this because I cuold"
+      }
+    },
+    "public": true,
+    "created_at": "2014-01-07T17:26:50Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1933276605",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 284923875,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/system",
+      "head": "f92f28ab1e30f487074c57c59dc90583d8bdc289",
+      "before": "cafce2faf541bd9e06aa11e9824d59396f15cf56",
+      "commits": [
+        {
+          "sha": "f92f28ab1e30f487074c57c59dc90583d8bdc289",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "First release of the sbol systems extension API",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/f92f28ab1e30f487074c57c59dc90583d8bdc289"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2014-01-03T18:47:03Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1933158803",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 284863367,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/system",
+      "head": "cafce2faf541bd9e06aa11e9824d59396f15cf56",
+      "before": "125ae42d0877f75eb5169960833f9141d5ae8255",
+      "commits": [
+        {
+          "sha": "cafce2faf541bd9e06aa11e9824d59396f15cf56",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Merged with the rdf-pickler",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/cafce2faf541bd9e06aa11e9824d59396f15cf56"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2014-01-03T16:46:07Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1933133577",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 583516,
+      "login": "drdozer",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/3",
+        "labels_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/3/labels{/name}",
+        "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/3/comments",
+        "events_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/3/events",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/3",
+        "id": 3780800,
+        "number": 3,
+        "title": "xml serialization requires lower-case DNA characters",
+        "user": {
+          "login": "drdozer",
+          "id": 583516,
+          "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+          "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+          "url": "https://api.github.com/users/drdozer",
+          "html_url": "https://github.com/drdozer",
+          "followers_url": "https://api.github.com/users/drdozer/followers",
+          "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+          "organizations_url": "https://api.github.com/users/drdozer/orgs",
+          "repos_url": "https://api.github.com/users/drdozer/repos",
+          "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/drdozer/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "url": "https://api.github.com/repos/SynBioDex/libSBOLj/labels/specification",
+            "name": "specification",
+            "color": "009800"
+          }
+        ],
+        "state": "open",
+        "assignee": null,
+        "milestone": null,
+        "comments": 14,
+        "created_at": "2012-03-23T14:38:31Z",
+        "updated_at": "2014-01-03T16:21:27Z",
+        "closed_at": null,
+        "pull_request": {
+          "html_url": null,
+          "diff_url": null,
+          "patch_url": null
+        },
+        "body": "The xml serialization requires lower-case characters for the DNA. It rejects upper-case letters.\r\n\r\nThe DNASequence.setNucleotides() method accepts upper-case letters, and as far as we can tell does no validation of the string at all.\r\n\r\nI agree that it is good for the XML serialization to validate that the XML string is DNA. Should it be enforcing case-sensitivity? There are lots of good reasons to used mixed-case DNA, but if we decide that only lower-case is aloud then that's fine by me. This restriction should be documented and potentially enforced in the DNASequence object model.\r\n\r\nsection 8.5.2 DnaSequence (https://github.com/SynBioDex/synbiodex.github.com/raw/master/specification/SBOLv1.1.0.pdf), has a description of the nucleotides property. It does not explicitly state that the DNA sequence MUST BE  lower-case. It's implicit in that it lists the legal chars, but as case is often not significant (or not enforced), it would be more explicit to make this clear.\r\n\r\nI think I have several related issues here. Could people responsible for the different aspects please unpick them?"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/comments/31533040",
+        "html_url": "https://github.com/SynBioDex/libSBOLj/issues/3#issuecomment-31533040",
+        "issue_url": "https://api.github.com/repos/SynBioDex/libSBOLj/issues/3",
+        "id": 31533040,
+        "user": {
+          "login": "drdozer",
+          "id": 583516,
+          "avatar_url": "https://gravatar.com/avatar/334c26bcec0c77d7280b1b6bbaca952c?d=https%3A%2F%2Fidenticons.github.com%2Fb222ac4f759a203f799fd1a62f0b02f0.png&r=x",
+          "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+          "url": "https://api.github.com/users/drdozer",
+          "html_url": "https://github.com/drdozer",
+          "followers_url": "https://api.github.com/users/drdozer/followers",
+          "following_url": "https://api.github.com/users/drdozer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/drdozer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/drdozer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/drdozer/subscriptions",
+          "organizations_url": "https://api.github.com/users/drdozer/orgs",
+          "repos_url": "https://api.github.com/users/drdozer/repos",
+          "events_url": "https://api.github.com/users/drdozer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/drdozer/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2014-01-03T16:21:27Z",
+        "updated_at": "2014-01-03T16:21:27Z",
+        "body": "This has been open 2 years! I am attaching it to the libSBOLj v2 milestone as it seems it will not be addressed in the 1.x series."
+      }
+    },
+    "public": true,
+    "created_at": "2014-01-03T16:21:27Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1933088372",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 284828039,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/system",
+      "head": "125ae42d0877f75eb5169960833f9141d5ae8255",
+      "before": "552d63e8ca54609bfb5610fee277242207db0c06",
+      "commits": [
+        {
+          "sha": "125ae42d0877f75eb5169960833f9141d5ae8255",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "First version of the RDF serialisation for SBOL systems",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/125ae42d0877f75eb5169960833f9141d5ae8255"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2014-01-03T15:34:29Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1933076163",
+    "type": "PushEvent",
+    "actor": {
+      "id": 583516,
+      "login": "drdozer",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 284821805,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/rdf-pickler",
+      "head": "fb6593d8bec25085dca664dd66c081bcd44aa143",
+      "before": "305e801f6a35adc9aaee909f2fd08354a9bb8c52",
+      "commits": [
+        {
+          "sha": "fb6593d8bec25085dca664dd66c081bcd44aa143",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added a resource maker that works directly with a URI.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb6593d8bec25085dca664dd66c081bcd44aa143"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2014-01-03T15:21:10Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1925297127",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 280706518,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/system",
+      "head": "552d63e8ca54609bfb5610fee277242207db0c06",
+      "before": "8120897d59c4660034dd1d84a8069bc96b914f61",
+      "commits": [
+        {
+          "sha": "552d63e8ca54609bfb5610fee277242207db0c06",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Systems are now serialised with name, desc and display id proeprties properly",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/552d63e8ca54609bfb5610fee277242207db0c06"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2013-12-20T16:48:54Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1921328770",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 278567154,
+      "size": 5,
+      "distinct_size": 3,
+      "ref": "refs/heads/feature/system",
+      "head": "8120897d59c4660034dd1d84a8069bc96b914f61",
+      "before": "4357ed0f09265b0762bc576182fb0434004859b1",
+      "commits": [
+        {
+          "sha": "91f2140db9e42613bc29498916615300be0a0c1f",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added a pickle method to write an entire SBOLDocument to a Model.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/91f2140db9e42613bc29498916615300be0a0c1f"
+        },
+        {
+          "sha": "305e801f6a35adc9aaee909f2fd08354a9bb8c52",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added IO support to CoreRdfPicklers. Added extra properties for publicly exposed resource names. Added the base URI to the associated properties file.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/305e801f6a35adc9aaee909f2fd08354a9bb8c52"
+        },
+        {
+          "sha": "d897ccc9169f8983cbc2ca08f882be3e6366e498",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Added the Device file",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/d897ccc9169f8983cbc2ca08f882be3e6366e498"
+        },
+        {
+          "sha": "43ff354fc1831bc3523371df84dad3e5eb543149",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Merge branch 'feature/rdf-pickler' into feature/system",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/43ff354fc1831bc3523371df84dad3e5eb543149"
+        },
+        {
+          "sha": "8120897d59c4660034dd1d84a8069bc96b914f61",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Initial demo version of SBOL Systems",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/8120897d59c4660034dd1d84a8069bc96b914f61"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2013-12-17T16:29:24Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1921015488",
+    "type": "PushEvent",
+    "actor": {
+      "id": 583516,
+      "login": "drdozer",
+      "gravatar_id": "334c26bcec0c77d7280b1b6bbaca952c",
+      "url": "https://api.github.com/users/drdozer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583516"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 278399346,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/rdf-pickler",
+      "head": "305e801f6a35adc9aaee909f2fd08354a9bb8c52",
+      "before": "91f2140db9e42613bc29498916615300be0a0c1f",
+      "commits": [
+        {
+          "sha": "305e801f6a35adc9aaee909f2fd08354a9bb8c52",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added IO support to CoreRdfPicklers. Added extra properties for publicly exposed resource names. Added the base URI to the associated properties file.",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/305e801f6a35adc9aaee909f2fd08354a9bb8c52"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2013-12-17T11:51:17Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1921010789",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 278396808,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/system",
+      "head": "4357ed0f09265b0762bc576182fb0434004859b1",
+      "before": "c688dbeb73c4dd36ce414766675b6abb625aabbb",
+      "commits": [
+        {
+          "sha": "4357ed0f09265b0762bc576182fb0434004859b1",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Added SBOLSystem.java",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/4357ed0f09265b0762bc576182fb0434004859b1"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2013-12-17T11:45:40Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  },
+  {
+    "id": "1921008493",
+    "type": "PushEvent",
+    "actor": {
+      "id": 55247,
+      "login": "goksel",
+      "gravatar_id": "92cb1eed9310ff18e51e7be8aa740b35",
+      "url": "https://api.github.com/users/goksel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55247"
+    },
+    "repo": {
+      "id": 3655926,
+      "name": "SynBioDex/libSBOLj",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj"
+    },
+    "payload": {
+      "push_id": 278395547,
+      "size": 16,
+      "distinct_size": 1,
+      "ref": "refs/heads/feature/system",
+      "head": "c688dbeb73c4dd36ce414766675b6abb625aabbb",
+      "before": "90e8100a88bc7312995a17f81b530e8ac802b3f7",
+      "commits": [
+        {
+          "sha": "9b10d135e2b80812989e0dd538bade3b5e05ce34",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Complete refactoring of the pickling API and logic.\n\nPicklers are now assembled rather than implemented. See the factory methods in SbolRdfPicklers and examples of use in CoreRdfPicklers.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/9b10d135e2b80812989e0dd538bade3b5e05ce34"
+        },
+        {
+          "sha": "017b4084295544c1dd62ea698f6fb3982bcc0017",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Cleaning up imports.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/017b4084295544c1dd62ea698f6fb3982bcc0017"
+        },
+        {
+          "sha": "0189b0e8e3335929608c3a3a8a97624969e8825c",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added top-level javadoc.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/0189b0e8e3335929608c3a3a8a97624969e8825c"
+        },
+        {
+          "sha": "0f6e30ce30b3b36bbd822d984510ea8eec3bf1cf",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Renamed RdfRelationshipPickler to RdfPropertyPickler as I keep naming it that by accident which I take to be a sign.\n\nDocumented the factory methods in SbolRdfPicklers.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/0f6e30ce30b3b36bbd822d984510ea8eec3bf1cf"
+        },
+        {
+          "sha": "8fa6653b5cc8b69e27f3291eb6cb44f0550a858d",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added documentation to CoreRdfPicklers.\n\nFinessed variance for various pickler combinators. This mainly means injecting `? super` into the right places.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/8fa6653b5cc8b69e27f3291eb6cb44f0550a858d"
+        },
+        {
+          "sha": "56948bde74bcd3c77fd1988f967ca365e944aab7",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "SbolRdfPicklers is now clean of all warnings.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/56948bde74bcd3c77fd1988f967ca365e944aab7"
+        },
+        {
+          "sha": "a5f2812018ec65c48e07d2058a138755194ef23c",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Documented ResourceMaker.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/a5f2812018ec65c48e07d2058a138755194ef23c"
+        },
+        {
+          "sha": "060ee87e5e6bc64049e5b24ea24c7ebbb9c7467c",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Moved the static inner classes of RdfPropertyPickler out into a nested .impl package.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/060ee87e5e6bc64049e5b24ea24c7ebbb9c7467c"
+        },
+        {
+          "sha": "583796d50d53e392acc260ead4353707aedd250e",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Moved static inner class of the ResourceMaker interface out into .impl.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/583796d50d53e392acc260ead4353707aedd250e"
+        },
+        {
+          "sha": "c64cf71a3c0463f1f4c9a5be2aea9a108e65ae28",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Javadocs for PropertyMaker.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/c64cf71a3c0463f1f4c9a5be2aea9a108e65ae28"
+        },
+        {
+          "sha": "719908bb7a03af7bda0eb181e3fcc7b12983b0c0",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Moved the ByName static inner class of PropertyMaker into .impl.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/719908bb7a03af7bda0eb181e3fcc7b12983b0c0"
+        },
+        {
+          "sha": "9828d54d49c7f34455fb9f21cc0af39e23923321",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Moved all static inner classes of RdfEntityPickler into .impl.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/9828d54d49c7f34455fb9f21cc0af39e23923321"
+        },
+        {
+          "sha": "75698cbd9d9165138de2e7d9c713c507e516b4f8",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Renamed SbolRdfPicklers to RdfPicklers.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/75698cbd9d9165138de2e7d9c713c507e516b4f8"
+        },
+        {
+          "sha": "569f12b2c4336bb7409ed5f43d497d13ed8b2224",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Added some minimal package documentation.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/569f12b2c4336bb7409ed5f43d497d13ed8b2224"
+        },
+        {
+          "sha": "e9f82fd70a0e50b547c2c3d086dfc484f87a2474",
+          "author": {
+            "email": "turingatemyhamster@gmail.com",
+            "name": "="
+          },
+          "message": "Documentation of the .impl package contents, and some very minor code tidying.",
+          "distinct": false,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/e9f82fd70a0e50b547c2c3d086dfc484f87a2474"
+        },
+        {
+          "sha": "c688dbeb73c4dd36ce414766675b6abb625aabbb",
+          "author": {
+            "email": "gokselmisirli@yahoo.com",
+            "name": "goksel"
+          },
+          "message": "Merge branch 'feature/rdf-pickler' into feature/system",
+          "distinct": true,
+          "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/c688dbeb73c4dd36ce414766675b6abb625aabbb"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2013-12-17T11:43:00Z",
+    "org": {
+      "id": 972220,
+      "login": "SynBioDex",
+      "gravatar_id": "ac0776f4a614ead86682ef3c59b9dc28",
+      "url": "https://api.github.com/orgs/SynBioDex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/972220"
+    }
+  }
+]

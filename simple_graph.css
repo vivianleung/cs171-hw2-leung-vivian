@@ -16,8 +16,13 @@ h1
   margin-bottom: 5pt;
 }
 
+form
+{
 
-.link {
+}
+
+path.link {
+  fill: none;
   stroke: gray;
   stroke-width: 1.5px;
 }

@@ -1,0 +1,106 @@
+{
+  "sha": "bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+  "commit": {
+    "author": {
+      "name": "Nicholas Roehner",
+      "email": "n.roehner@utah.edu",
+      "date": "2013-10-23T14:16:26Z"
+    },
+    "committer": {
+      "name": "Nicholas Roehner",
+      "email": "n.roehner@utah.edu",
+      "date": "2013-10-23T14:16:26Z"
+    },
+    "message": "Merge pull request #39 from nroehner/master\n\nSBOLValidator class now accounts for minus strand",
+    "tree": {
+      "sha": "312f52c7e8ff23c966e7b22cd371c300cb3b9aca",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/trees/312f52c7e8ff23c966e7b22cd371c300cb3b9aca"
+    },
+    "url": "https://api.github.com/repos/SynBioDex/libSBOLj/git/commits/bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+    "comment_count": 0
+  },
+  "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+  "html_url": "https://github.com/SynBioDex/libSBOLj/commit/bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+  "comments_url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/bb9795affd55f185af462760ad88cd9ef1fbe8c9/comments",
+  "author": {
+    "login": "nroehner",
+    "id": 674047,
+    "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+    "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+    "url": "https://api.github.com/users/nroehner",
+    "html_url": "https://github.com/nroehner",
+    "followers_url": "https://api.github.com/users/nroehner/followers",
+    "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+    "organizations_url": "https://api.github.com/users/nroehner/orgs",
+    "repos_url": "https://api.github.com/users/nroehner/repos",
+    "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nroehner/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nroehner",
+    "id": 674047,
+    "avatar_url": "https://avatars.githubusercontent.com/u/674047",
+    "gravatar_id": "681a5669009b212cb2aab1cf53b591d2",
+    "url": "https://api.github.com/users/nroehner",
+    "html_url": "https://github.com/nroehner",
+    "followers_url": "https://api.github.com/users/nroehner/followers",
+    "following_url": "https://api.github.com/users/nroehner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nroehner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nroehner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nroehner/subscriptions",
+    "organizations_url": "https://api.github.com/users/nroehner/orgs",
+    "repos_url": "https://api.github.com/users/nroehner/repos",
+    "events_url": "https://api.github.com/users/nroehner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nroehner/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "6bd3808bd997bb1ccd5f11c1cec73b3e53a929ae",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/6bd3808bd997bb1ccd5f11c1cec73b3e53a929ae",
+      "html_url": "https://github.com/SynBioDex/libSBOLj/commit/6bd3808bd997bb1ccd5f11c1cec73b3e53a929ae"
+    },
+    {
+      "sha": "5eb58ec6fe96bc9a331b4278f0ac2e2753b91bc7",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/5eb58ec6fe96bc9a331b4278f0ac2e2753b91bc7",
+      "html_url": "https://github.com/SynBioDex/libSBOLj/commit/5eb58ec6fe96bc9a331b4278f0ac2e2753b91bc7"
+    }
+  ],
+  "stats": {
+    "total": 45,
+    "additions": 44,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "286a89147164d63bb34c5bd17c4dbfc80f631a64",
+      "filename": "src/main/java/org/sbolstandard/core/impl/DnaSequenceImpl.java",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 0,
+      "changes": 38,
+      "blob_url": "https://github.com/SynBioDex/libSBOLj/blob/bb9795affd55f185af462760ad88cd9ef1fbe8c9/src/main/java/org/sbolstandard/core/impl/DnaSequenceImpl.java",
+      "raw_url": "https://github.com/SynBioDex/libSBOLj/raw/bb9795affd55f185af462760ad88cd9ef1fbe8c9/src/main/java/org/sbolstandard/core/impl/DnaSequenceImpl.java",
+      "contents_url": "https://api.github.com/repos/SynBioDex/libSBOLj/contents/src/main/java/org/sbolstandard/core/impl/DnaSequenceImpl.java?ref=bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+      "patch": "@@ -53,6 +53,44 @@ public DnaSequenceImpl() {\n     public String getNucleotides() {\n         return nucleotides;\n     }\n+\t\n+\tpublic String getReverseComplementaryNucleotides() {\n+\t\tStringBuilder complementary = new StringBuilder(nucleotides.length());\n+\t\tfor (int i = nucleotides.length() - 1; i >= 0; i--) {\n+\t\t\tchar nucleotide = nucleotides.charAt(i);\n+\t\t\tif (nucleotide == 'a')\n+\t\t\t\tcomplementary.append('t');\n+\t\t\telse if (nucleotide == 't')\n+\t\t\t\tcomplementary.append('a');\n+\t\t\telse if (nucleotide == 'g')\n+\t\t\t\tcomplementary.append('c');\n+\t\t\telse if (nucleotide == 'c')\n+\t\t\t\tcomplementary.append('g');\n+\t\t\telse if (nucleotide == 'm')\n+\t\t\t\tcomplementary.append('k');\n+\t\t\telse if (nucleotide == 'r')\n+\t\t\t\tcomplementary.append('y');\n+\t\t\telse if (nucleotide == 'w')\n+\t\t\t\tcomplementary.append('w');\n+\t\t\telse if (nucleotide == 's')\n+\t\t\t\tcomplementary.append('s');\n+\t\t\telse if (nucleotide == 'y')\n+\t\t\t\tcomplementary.append('r');\n+\t\t\telse if (nucleotide == 'k')\n+\t\t\t\tcomplementary.append('m');\n+\t\t\telse if (nucleotide == 'v')\n+\t\t\t\tcomplementary.append('b');\n+\t\t\telse if (nucleotide == 'h')\n+\t\t\t\tcomplementary.append('d');\n+\t\t\telse if (nucleotide == 'd')\n+\t\t\t\tcomplementary.append('h');\n+\t\t\telse if (nucleotide == 'b')\n+\t\t\t\tcomplementary.append('v');\n+\t\t\telse if (nucleotide == 'n')\n+\t\t\t\tcomplementary.append('n');\n+\t\t}\n+\t\treturn complementary.toString();\n+\t}\n \n \t/**\n      * {@inheritDoc}"
+    },
+    {
+      "sha": "8c1b093896850674767620bbbdcb9fa4c11a0909",
+      "filename": "src/main/java/org/sbolstandard/core/impl/SBOLValidatorImpl.java",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/SynBioDex/libSBOLj/blob/bb9795affd55f185af462760ad88cd9ef1fbe8c9/src/main/java/org/sbolstandard/core/impl/SBOLValidatorImpl.java",
+      "raw_url": "https://github.com/SynBioDex/libSBOLj/raw/bb9795affd55f185af462760ad88cd9ef1fbe8c9/src/main/java/org/sbolstandard/core/impl/SBOLValidatorImpl.java",
+      "contents_url": "https://api.github.com/repos/SynBioDex/libSBOLj/contents/src/main/java/org/sbolstandard/core/impl/SBOLValidatorImpl.java?ref=bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+      "patch": "@@ -112,7 +112,12 @@ private void checkPositionConsistency(SequenceAnnotation annotation) {\n \n \t\t\t\tDnaSequence dnaSequence = annotation.getSubComponent().getDnaSequence();\n \t\t\t\tif (dnaSequence != null) {\n-\t\t\t\t\tString sequence = dnaSequence.getNucleotides();\n+\t\t\t\t\tString sequence;\n+\t\t\t\t\tif (annotation.getStrand() != null && \n+\t\t\t\t\t\t\tannotation.getStrand().getSymbol().equals(StrandType.NEGATIVE.getSymbol()))\n+\t\t\t\t\t\tsequence = ((DnaSequenceImpl) dnaSequence).getReverseComplementaryNucleotides();\n+\t\t\t\t\telse\n+\t\t\t\t\t\tsequence = dnaSequence.getNucleotides();\n \n \t\t\t\t\tassertTrue(expectedLength == sequence.length(),\n \t\t\t\t\t           \"DnaSequence length does not match bioStart and bioEnd values\", annotation);"
+    }
+  ]
+}

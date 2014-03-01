@@ -9,6 +9,7 @@
 <body>
 <script src="http://d3js.org/d3.v3.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="synbiodex_stats.js"></script>
   <h1>Simple Graph</h1>
   <form>
   Layout:
@@ -35,19 +36,13 @@
   </form>
 <script>
 
-// I chose the programming-life repository because I'm very interested in computational biology and it's a super-cool way of visually communicating biology!  ^_^ 
-
 // http://sleeplessbyte.github.io/programming-life/
 // https://github.com/SleeplessByte/programming-life
-
-// test repo
-//    repo = "https://2bfd9c196f103380dc04c5811b140a6c57d567ad@api.github.com/repos/SleeplessByte/programming-life/";
-
- 
+  
 // CONSTANTS
 var width = 900,
     height = 700;
-var repo = "https://2bfd9c196f103380dc04c5811b140a6c57d567ad@api.github.com/repos/BIOFAB/ClothoBiofabEdition/";
+var repo = "https://2bfd9c196f103380dc04c5811b140a6c57d567ad@api.github.com/repos/SynBioDex/libSBOLj/";
 var svg = d3.select("body").append("svg")
         .attr("width", width)
         .attr("height", height);
@@ -55,45 +50,77 @@ var fill = d3.scale.category10();
 var graph = {nodes:[], links:[]};
 var tScale = d3.time.scale();
 var iScale = d3.scale.ordinal();
-var nb_cat = 10;
-var nb_nodes;
+var uScale = d3.scale.ordinal();
+var nb_cat;
+var nb_nodes; 
+
+/** TYPES OF NODES:
+  * Regular Commit Node (same branch)  1 source   1 target
+  * First Node (new repository)        0 source   1 target
+  * Branch Head (terminal, recent)     1+ source  1 target  (not a parent)
+  * Merge Branch Node                  2+ source  1+ target
+  */
+
 
 // retrieves information on all branches of repo
-d3.json(repo + 'branches', function(error, branches) {
+d3.json(repo + 'branches', function(error, blist) {
 
   if (error) { console.log(error); }
   else { 
     // prepares queue for synchronous commit data retrieval
     var q = queue();
+    nb_cat = blist.length;
+    blist.forEach( function(d, i) {d.cat = i; }  )
 
     // helper function to get commit data for a given sha
-    var getCommits = function(sha, callback) {
-      d3.json(repo+"commits?sha="+sha+"&per_page=50", function(d) { 
-        callback(null, d); }); } ;
+    var getCommits = function(b, callback) {
+      var sha = b.commit.sha
+      d3.json(repo+"commits?sha="+sha+"&per_page=100", function(d) { 
+        callback(null, [d, b]); }); } ;
 
     // for each branch, get commit data -- task added by .defer() to queue q
-    branches.forEach( function(d) {q.defer(getCommits, d["commit"]["sha"]); });
+    blist.forEach( function(b) {q.defer(getCommits, b); });
   
     // waits for returns from all tasks
-    q.awaitAll(function(error, commitData) { 
+    q.awaitAll(function(error, allData) { 
+      DATA = allData;
       if (error) { console.log(error) ;}
       else {
-        var parseDate = d3.time.format("%Y-%m-%dT%H:%M:%SZ").parse;
-
-        // populates GRAPH.NODES wtih an object per commit
-        commitData.forEach( function(subarray) {
-          subarray.forEach( function(d) {
-            d.commit.committer.date = parseDate(d.commit.committer.date);
-            var dNode = {};
-            for (var key in d) { dNode[key] = d[key]; }
-            graph.nodes.push(dNode); 
-          });
-        });
-        loadPage(); 
+        populateNodes(allData);
+        loadPage();
       }
-    })
+    });
   }
-})
+});
+
+// populates GRAPH.NODES wtih an object per commit
+function populateNodes(allData) {
+  
+  var parseDate = d3.time.format("%Y-%m-%dT%H:%M:%SZ").parse;
+
+  // for each branch
+  allData.map( function(branch) {
+    branch[0].map( function(newNode) {
+
+      var branchinfo = {'name': branch[1].name, 'cat': branch[1].cat };
+      
+      // check if node already exists
+      var exists = false;
+      for (n in graph.nodes) {
+        if (graph.nodes[n].sha == newNode.sha) { 
+          /*graph.nodes[n].branch.push(branchinfo);*/
+          exists = true;}
+      }
+      if (exists == false) {
+        var comNode = {};
+        for (var key in newNode) { comNode[key] = newNode[key]; }
+        comNode.branch = branchinfo;
+        comNode.commit.committer.date = parseDate(comNode.commit.committer.date);
+        graph.nodes.push(comNode); 
+      }
+    });
+  });
+}
 
 function loadPage() {
 
@@ -102,12 +129,13 @@ function loadPage() {
   var Index = function(d, i) { return i; };  // CHANGED THIS
 
   nb_nodes = graph.nodes.length;
-  tScale.domain(graph.nodes.map(Time)) .rangeRound([0, width - 10]);
-  iScale.domain(graph.nodes.map(Index)).range([0, width - 10]);;
+  tScale.domain(d3.extent(graph.nodes.map(Time))).rangeRound([10, width - 10]);
+  iScale.domain(graph.nodes.map(Index)).range([10, width - 10]);;
+  uScale.domain(graph.nodes.map(function(d) {return d.commit.author.name;}))
+    .rangePoints([10, height-10]);
 
   // since we're using an ordinal scale here, we can just use arr.len-1
-  var iDomMax = iScale.domain().length - 1 ; 
-  graph.nodes.map( function(d, i) { d.cat = Math.floor(i/iDomMax*nb_cat); });
+  graph.nodes.map( function(d, i) { d.cat = Math.floor(i/(nb_nodes-1)*nb_cat); });
 
   // object of key-value pairs to look up graph.nodes index val for given sha
   var shaToIndex = {};
@@ -119,12 +147,39 @@ function loadPage() {
       d.parents.forEach( function(s) {
         var sourceSha = s.sha;
         var sourceNode = graph.nodes[shaToIndex[sourceSha]];
-        if (sourceNode != undefined) {
+        if (sourceNode != undefined) { // fix for parent and current nodes
           graph.links.push({"source": sourceNode, "target": d}); 
         }
       });
     }
   });
+
+  // SORT NODES BY DATE
+  graph.nodes.sort( function(a,b) {
+    return a.commit.committer.date - b.commit.committer.date;
+  });
+
+
+/*  var ppBranch = graph.nodes[0].branch;
+  var pBranch = graph.nodes[1].branch;
+
+  graph.nodes ( function(d) {
+    if (d.branch.name == pBranch.name) {
+      if (ppBranch.name == )
+      d.branch = pBranch;
+    }
+  });*/
+
+  // for each branch, find out branch events (if multiple children / targets -- check during links populate) and merge events (parents = 2)
+
+  // for each node, check whether last event (from before) is a branch or a merge - if branch, then color with branch color, else, color with merged parent
+
+
+// if node has two targets, 
+
+
+
+
 
   // Generate the force layout
   var force = d3.layout.force()
@@ -137,15 +192,33 @@ function loadPage() {
 
   force_layout();
 
-  var link = svg.selectAll(".link")
-                .data(force.links())
-                .enter().append("line")
-                .attr("class", "link")
+  // arrow mkr code borrowed from example http://bl.ocks.org/d3noob/5141278
+  svg.append("svg:defs").selectAll("marker")
+      .data(["end"])      // Different link/path types can be defined here
+    .enter().append("svg:marker")    // This section adds in the arrows
+      .attr("id", String)
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 15)
+      .attr("refY", -1.5)
+      .attr("markerWidth", 4)
+      .attr("markerHeight", 8)
+      .attr("orient", "auto")
+      .append("svg:path")
+      .attr("d", "M0, -5L10,0L0,5");
 
+  var link = svg.append("svg:g").selectAll("path.link")
+                .data(force.links())
+                .enter().append("svg:path")  // change to path here
+                .attr("class", "link")
+                .attr("marker-end", "url(#end)");
+
+  console.log(link);
   var node = svg.selectAll(".node")
                 .data(force.nodes())
                 .enter()
-                .append("g").attr("class", "node");
+                .append("g").attr("class", "node")
+                .call(force.drag);
+
 
   node.append("circle")
       .attr("r", 5);
@@ -159,10 +232,10 @@ function loadPage() {
     d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
   })
   d3.select("input[value=\"color_cat\"]").on("click", category_color);
-  d3.select("input[value=\"nosize\"]").on("click", function() {
+  d3.select("input[value=\"nosize\"]").on("click", function() { 
     d3.selectAll("circle").transition().duration(500).attr("r", 5);  })
   d3.select("input[value=\"size_cat\"]").on("click", category_size);
-  d3.select("input[value=\"index\"]").on("click", index_layout);
+  d3.select("input[value=\"index\"]").on("click", force_layout);
   d3.select("input[value=\"time\"]").on("click", time_layout);
 
 
@@ -191,7 +264,10 @@ function loadPage() {
 
   function line_cat_layout() {
     force.stop();
-    graph.nodes.forEach(function(d, i) {  d.y = height/2 + d.cat*20;  });
+    graph.nodes.forEach(function(d, i) { 
+      d.x = width*(i + 2)/nb_nodes;
+      d.y = uScale(d.commit.author.name); 
+    });
     graph_update(500);
   }
 
@@ -216,48 +292,55 @@ function loadPage() {
   }
 
   function category_color() {
-    d3.selectAll("circle").transition().duration(500).style("fill", function(d) { return fill(d.cat); });
+    d3.selectAll("circle").transition().duration(500)
+    .style("fill", function(d){ 
+        return fill(d.branch.cat); });
   }
 
   function category_size() {
-    d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.cat+1)*10); });
+    d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.branch.cat+1)*10); });
   }
-  function index_layout() {
-    force.stop();
-    var imax = iScale(d3.max(iScale.domain())); 
-
-    graph.nodes.forEach(function(d, i) {
-      var scaleD = iScale(i);
-      d.cat = Math.floor(scaleD/imax*nb_cat);
-      d.x = scaleD;
-      d.y = height/2 + d.cat*20;
-    });
-    graph_update(500);
-  }
-
   function time_layout() {
     force.stop();
-    var tmax = tScale(d3.max(tScale.domain())) ; 
-
     graph.nodes.forEach(function(d, i) {
-      var scaleD = tScale(d.commit.committer.date)
-      d.cat = Math.floor(scaleD/tmax*nb_cat);
-      d.x = tScale(d.commit.committer.date);
-      d.y = height/2 + d.cat*20; 
+      console.log(tScale(d.commit.committer.date));
+      d.x = tScale((d.commit.committer.date)) ;
+      d.y = uScale(d.commit.author.name);  
     });
+/*    graph.nodes.forEach(function(d, i) { 
+      d.x = width*(i + 2)/nb_nodes;
+      d.y = height/2 + (d.branch.cat - nb_cat/2)*20;  
+
+
+*/
+
     graph_update(500);
   }
 
   function graph_update(delay) {
-    link.transition().duration(delay)
+/*    link.transition().duration(delay)
         .attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
+        .attr("y2", function(d) { return d.target.y; });*/
 
-    node.transition().duration(delay)
-        .attr("transform", function(d) { 
-          return "translate("+d.x+","+d.y+")"; }); 
+    link.transition().duration(delay)
+      .attr("d", function(d) {
+          var dx = d.target.x - d.source.x,
+              dy = d.target.y - d.source.y,
+              dr = Math.sqrt(dx * dx + dy * dy);
+          return "M" + 
+              d.source.x + "," + 
+              d.source.y + "A" + 
+              dr + "," + dr + " 0 0,1 " + 
+              d.target.x + "," + 
+              d.target.y;
+    });
+
+
+  node.transition().duration(delay)
+      .attr("transform", function(d) { 
+        return "translate("+d.x+","+d.y+")"; }); 
   }
 }
 

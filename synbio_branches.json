@@ -1,0 +1,67 @@
+var BRANCHES = [
+  {
+    "name": "Device",
+    "commit": {
+      "sha": "6032cf3ea77669d4d14e89afe49a0d4203eb572e",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/6032cf3ea77669d4d14e89afe49a0d4203eb572e"
+    }
+  },
+  {
+    "name": "NBT",
+    "commit": {
+      "sha": "bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/bb9795affd55f185af462760ad88cd9ef1fbe8c9"
+    }
+  },
+  {
+    "name": "develop",
+    "commit": {
+      "sha": "cf40323dc8f88912de59ddf48d05b1f54a8b80f8",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/cf40323dc8f88912de59ddf48d05b1f54a8b80f8"
+    }
+  },
+  {
+    "name": "ernst_dev",
+    "commit": {
+      "sha": "bb9795affd55f185af462760ad88cd9ef1fbe8c9",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/bb9795affd55f185af462760ad88cd9ef1fbe8c9"
+    }
+  },
+  {
+    "name": "feature/modularised",
+    "commit": {
+      "sha": "2ed523b9e5095d0da43352e910a68a9ea431f096",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/2ed523b9e5095d0da43352e910a68a9ea431f096"
+    }
+  },
+  {
+    "name": "feature/rdf-pickler",
+    "commit": {
+      "sha": "fb6593d8bec25085dca664dd66c081bcd44aa143",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/fb6593d8bec25085dca664dd66c081bcd44aa143"
+    }
+  },
+  {
+    "name": "feature/system",
+    "commit": {
+      "sha": "510b5346716a60dfaed71043d699450ad7ac3dfd",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/510b5346716a60dfaed71043d699450ad7ac3dfd"
+    }
+  },
+  {
+    "name": "master",
+    "commit": {
+      "sha": "cf40323dc8f88912de59ddf48d05b1f54a8b80f8",
+      "url": "https://api.github.com/repos/SynBioDex/libSBOLj/commits/cf40323dc8f88912de59ddf48d05b1f54a8b80f8"
+    }
+  }
+]
+
+Device
+NBT
+develop
+ernst_dev
+feature/modularised
+feature/rdf-pickler
+feature/system
+master
