@@ -54,15 +54,6 @@ var uScale = d3.scale.ordinal();
 var nb_cat;
 var nb_nodes; 
 var heads = {};
-var pulls = {};
-
-/** TYPES OF NODES:
-  * Regular Commit Node (same branch)  1 source   1 target
-  * First Node (new repository)        0 source   1 target
-  * Branch Head (terminal, recent)     1+ source  1 target  (not a parent)
-  * Merge Branch Node                  2+ source  1+ target
-  */
-
 
 // retrieves information on all branches of repo
 d3.json(repo + 'branches', function(error, blist) {
@@ -71,7 +62,7 @@ d3.json(repo + 'branches', function(error, blist) {
   else { 
     // prepares queue for synchronous commit data retrieval
     blist.map( function(d) { 
-      heads[d.name] = {'name': d.name, 'sha': d.commit.sha}; });
+      heads[d.name] = {'name': d.name, 'sha': d.commit.sha }; });
     var q = queue();
     nb_cat = blist.length;
 
@@ -81,32 +72,14 @@ d3.json(repo + 'branches', function(error, blist) {
       d3.json(repo+"commits?sha="+sha+"&per_page=100", function(d) { 
         callback(null, [d, b]); }); } ;
 
-    var getPullData = function(callback) {
-      d3.json(repo+"pulls?state=all", function(error, pullD) {
-        if (error) { console.log(error); }
-        else { callback( null, pullD); } }); };
-
     // for each branch, get commit data -- task added by .defer() to queue q
     blist.forEach( function(b) {q.defer(getCommits, b); });
-    q.defer(getPullData);
 
     // waits for returns from all tasks
     q.awaitAll(function(error, allData) { 
       DATA = allData;
       if (error) { console.log(error) ;}
       else {
-        var pullResults = allData.pop();
-        console.log(pullResults);
-        pullResults.forEach( function(d) {
-          var key = d.base.sha;
-          var info = {
-            'head': {'name':d.head.ref, 'sha':d.head.sha, 'branchHead': heads.name},
-            'base': {'name':d.base.ref, 'sha':d.base.sha, 'branchHead': heads.name},
-            'number': d.number,
-            'commits': d.commits_url
-          };
-          pulls[key] = info;
-        });
         populateNodes(allData);
         loadPage();
    }});
@@ -158,57 +131,53 @@ function loadPage() {
   var refreshInd = function() { graph.nodes.forEach( function(d, i) { 
     shaToIndex[d.sha] = i; }); }
   var getNode = function(obj) { return graph.nodes[shaToIndex[obj.sha]]; }
+  // binfo from blist
 
-
-  var branchify = function(b, currN) {
+  var branchify = function(bInfo, currN) {
 
     var currP = currN.parents;
 
     // base case: end of branch (first commit of repo)
-    if (currP.length == 0) { return; } //
+    if (currP.length == 0) { return 1; } 
 
     // recursive cases:
     else {
-      if (currP.length > 1){
-
-        var currPn = currP.map(function(d) {return getNode(d); });
-        var pull = null;
-
-        // for each parent NODE
-        currPn.forEach(function(baseP) {
-
-          if (baseP.branch == undefined) { 
-            // find base
-            if (pulls[baseP.sha] != undefined) {
-              pull = pulls[baseP.sha];
-              baseP.branch = pull.base;
-              branchify(pull.base, baseP);
-
-              // if found base, set head 
-              currPn.forEach(function(headP, a) {
-                if(pull.head.sha == headP.sha){ 
-                  headP.branch = pull.head;
-                  branchify(pull.head, headP);
-                }
-              })
-            }
-            else { branchify(baseP.branch, baseP); }
-          }
-        }); // end of currPn loop
-
-        // if pulls not found 
-        if (pulls == null) { 
-          currPn[0].branch = currN.branch;
-          branchify(currPn[0].branch, currPn[0]);
-        }      
+      var currPnodes = currP.map( function(d) { return getNode(d); });
+      var p;
+      for (p=0; p < currPnodes.length; p++){
+        if (currPnodes[p].branch == undefined ) { 
+            currPnodes[p].branch = bInfo;
+            return branchify(bInfo, currPnodes[p]); }
+        else {
+          if (currPnodes[p].branch == bInfo) {
+            return branchify(bInfo, currPnodes[p]); }
+        }
       }
+      var membership = [];
+      // if no undefined or matching branches
+      if (p == currPnodes.length) {
+        for (var q=0; q < currPnodes.length; q++) {
+          currPnodes[q].branchmap.forEach( function(m) {
+            if (m == bInfo.name) { membership.push(m); } });
+        }
+      }
+      if (membership.length == 1) { return branchify(bInfo, membership[0]); }
+      else { return branchify(bInfo, currPnodes[0]); }
     }
-  };
+  }
+      
+  // at merge
+  // if first parent euqals this node, then follow that node
+  // else if first prent already defined , doesn't equal this node, then go to second node
+    // if second node is already defined and equals, then follow this node.
+    // if second node doesn't equal this node, then check branch maps. if one contains branch name and the other doesn't, follow the former. else, follow the first node.
+  // else if first node is undefined, define first node by this node's branch info
+
 
   refreshInd();
-  branchify(heads.master.sha, getNode(heads.master));
-  for (it in heads){
-    if (heads[it] != "master") { branchify(heads[it].sha, getNode(heads[it]) );  }
+  branchify(heads.master, getNode(heads.master));
+  for (var it=0; it<heads.length; it++) {
+    if (heads[it] != "master") { branchify(heads[it], getNode(heads[it]) ); }
   }
 
   // populate GRAPH.LINKS
