@@ -54,7 +54,7 @@ var uScale = d3.scale.ordinal();
 var nb_cat;
 var nb_nodes; 
 var heads = {};
-var pulldata = {};
+var pulls = {};
 
 /** TYPES OF NODES:
   * Regular Commit Node (same branch)  1 source   1 target
@@ -96,15 +96,16 @@ d3.json(repo + 'branches', function(error, blist) {
       if (error) { console.log(error) ;}
       else {
         var pullResults = allData.pop();
+        console.log(pullResults);
         pullResults.forEach( function(d) {
-          var key = d.head.sha;
+          var key = d.base.sha;
           var info = {
-            'head': {'name':d.head.ref, 'sha':d.head.sha, 'head': heads.name},
-            'base': {'name':d.base.ref, 'sha':d.base.sha, 'head': heads.name},
+            'head': {'name':d.head.ref, 'sha':d.head.sha, 'branchHead': heads.name},
+            'base': {'name':d.base.ref, 'sha':d.base.sha, 'branchHead': heads.name},
             'number': d.number,
             'commits': d.commits_url
           };
-          pulldata[key] = info;
+          pulls[key] = info;
         });
         populateNodes(allData);
         loadPage();
@@ -154,14 +155,62 @@ function loadPage() {
 
   // object of key-value pairs to look up graph.nodes index val for given sha
   var shaToIndex = {};
-  graph.nodes.map( function(d, i) { shaToIndex[d.sha] = i; });
-    
+  var refreshInd = function() { graph.nodes.forEach( function(d, i) { 
+    shaToIndex[d.sha] = i; }); }
   var getNode = function(obj) { return graph.nodes[shaToIndex[obj.sha]]; }
 
 
+  var branchify = function(b, currN) {
 
- // function branchify () {GOES HERE}
-    
+    var currP = currN.parents;
+
+    // base case: end of branch (first commit of repo)
+    if (currP.length == 0) { return; } //
+
+    // recursive cases:
+    else {
+      if (currP.length > 1){
+
+        var currPn = currP.map(function(d) {return getNode(d); });
+        var pull = null;
+
+        // for each parent NODE
+        currPn.forEach(function(baseP) {
+
+          if (baseP.branch == undefined) { 
+            // find base
+            if (pulls[baseP.sha] != undefined) {
+              pull = pulls[baseP.sha];
+              baseP.branch = pull.base;
+              branchify(pull.base, baseP);
+
+              // if found base, set head 
+              currPn.forEach(function(headP, a) {
+                if(pull.head.sha == headP.sha){ 
+                  headP.branch = pull.head;
+                  branchify(pull.head, headP);
+                }
+              })
+            }
+            else { branchify(baseP.branch, baseP); }
+          }
+        }); // end of currPn loop
+
+        // if pulls not found 
+        if (pulls == null) { 
+          currPn[0].branch = currN.branch;
+          branchify(currPn[0].branch, currPn[0]);
+        }      
+      }
+    }
+  };
+
+  refreshInd();
+  branchify(heads.master.sha, getNode(heads.master));
+  for (it in heads){
+    if (heads[it] != "master") { branchify(heads[it].sha, getNode(heads[it]) );  }
+  }
+
   // populate GRAPH.LINKS
   graph.nodes.map( function(d, i) {
     if (d.hasOwnProperty('parents')) {
@@ -209,7 +258,7 @@ function loadPage() {
       .attr("markerHeight", 8)
       .attr("orient", "auto")
       .append("svg:path")
-      .attr("d", "m0, -5L10,0L0,5");
+      .attr("d", "M0, -5L10,0L0,5");
 
   var link = svg.append("g").selectAll(".link")
                 .data(force.links())
@@ -347,6 +396,7 @@ function loadPage() {
           var dx = d.target.x - d.source.x,
               dy = d.target.y - d.source.y,
               dr = Math.sqrt(dx * dx + dy * dy);
+          
           return "M" + 
               d.source.x + "," + 
               d.source.y + "A" + 
