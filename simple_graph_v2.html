@@ -14,10 +14,7 @@
   <form>
   Layout:
     <label><input type="radio" name="layout" value="force" checked> Force</label>
-    <label><input type="radio" name="layout" value="random" > Random</label>
     <label><input type="radio" name="layout" value="radial"> Radial</label>  
-    <label><input type="radio" name="layout" value="line"> Line</label>
-    <label><input type="radio" name="layout" value="line_cat"> Line by Category</label>
   </form>
   <form>
   Color:
@@ -111,20 +108,17 @@ function populateNodes(allData) {
       }
     });
   });
-}
-
-function loadPage() {
-
-
-    // GET RID OF THIS IN SCALES TOO
-  // since we're using an ordinal scale here, we can just use arr.len-1
-  graph.nodes.map( function(d, i) { d.cat = Math.floor(i/(nb_nodes-1)*nb_cat); });
-
 
   // SORT NODES BY DATE
   graph.nodes.sort( function(a,b) {
     return a.commit.committer.date - b.commit.committer.date;
   });
+
+}
+
+function loadPage() {
+
+    
 
   // object of key-value pairs to look up graph.nodes index val for given sha
   var shaToIndex = {};
@@ -134,11 +128,9 @@ function loadPage() {
   // binfo from blist
 
   var branchify = function(bInfo, currN) {
-
     var currP = currN.parents;
-
     // base case: end of branch (first commit of repo)
-    if (currP.length == 0) { return 1; } 
+    if (currP == undefined || currP.length == 0 ) { return 1; } 
 
     // recursive cases:
     else {
@@ -147,20 +139,18 @@ function loadPage() {
       for (p=0; p < currPnodes.length; p++){
         if (currPnodes[p].branch == undefined ) { 
             currPnodes[p].branch = bInfo;
-            return branchify(bInfo, currPnodes[p]); }
+            branchify(bInfo, currPnodes[p]); }
         else {
           if (currPnodes[p].branch == bInfo) {
-            return branchify(bInfo, currPnodes[p]); }
-        }
-      }
+            branchify(bInfo, currPnodes[p]); }
+      }}
       var membership = [];
       // if no undefined or matching branches
       if (p == currPnodes.length) {
         for (var q=0; q < currPnodes.length; q++) {
           currPnodes[q].branchmap.forEach( function(m) {
-            if (m == bInfo.name) { membership.push(m); } });
-        }
-      }
+            if (m == bInfo.name) { membership.push(q); } });
+      }}
       if (membership.length == 1) { return branchify(bInfo, membership[0]); }
       else { return branchify(bInfo, currPnodes[0]); }
     }
@@ -176,17 +166,18 @@ function loadPage() {
 
   refreshInd();
   branchify(heads.master, getNode(heads.master));
-  for (var it=0; it<heads.length; it++) {
-    if (heads[it] != "master") { branchify(heads[it], getNode(heads[it]) ); }
+  for (bh in heads) {
+    if (heads[bh] != "master") { branchify(heads[bh], getNode(heads[bh]) ); }
   }
 
   // populate GRAPH.LINKS
   graph.nodes.map( function(d, i) {
+    if (d.branch == undefined) {d.branch = heads.master;}
     if (d.hasOwnProperty('parents')) {
       d.parents.forEach( function(s) {
         var sourceSha = s.sha;
         var sourceNode = graph.nodes[shaToIndex[sourceSha]];
-        if (sourceNode != undefined) { // fix for parent and current nodes
+        if (sourceNode != undefined) {
           graph.links.push({"source": sourceNode, "target": d}); 
         }
       });
@@ -208,7 +199,7 @@ function loadPage() {
   var force = d3.layout.force()
       .size([width, height])
       .charge(-50)
-      .linkDistance(10)
+      .linkDistance(20)
       .on("tick", tick)
       .on("start", function(d) {})
       .on("end", function(d) {});
@@ -216,35 +207,46 @@ function loadPage() {
   force_layout();
 
   // arrow mkr code borrowed from example http://bl.ocks.org/d3noob/5141278
-  svg.append("svg:defs").selectAll("marker")
-      .data(["end"])      // Different link/path types can be defined here
-    .enter().append("svg:marker")    // This section adds in the arrows
+/*  svg.append("svg:defs").selectAll("marker")
+      .data(["end"])      
+    .enter().append("svg:marker")    
       .attr("id", String)
       .attr("viewBox", "0 -5 10 10")
       .attr("refX", 15)
       .attr("refY", -1.5)
       .attr("markerWidth", 4)
       .attr("markerHeight", 8)
-      .attr("orient", "auto")
-      .append("svg:path")
-      .attr("d", "M0, -5L10,0L0,5");
+      .attr("orient", "auto");*/
 
-  var link = svg.append("g").selectAll(".link")
-                .data(force.links())
-                .enter().append("svg:path")  // change to path here
-                .attr("class", "link")
-                .attr("marker-end", "url(#end)");
+  var offset_y = 10;
+  var line = d3.svg.line()
+               .x(function(d) { return d.x; })
+               .y(function(d) { return d.y; })
+               .interpolate("linear");
 
   var node = svg.selectAll(".node")
                 .data(force.nodes())
                 .enter()
-                .append("g").attr("class", "node")
-                .call(force.drag);
+                .append("g").attr("class", "node");
 /*                .on("mouseover", function(d) { })
                 .on("mouseout", function(d) { })*/
 
+  var link = svg.selectAll(".link")
+                .data(force.links())
+                .enter().append("path")  // change to path here
+                .attr("class", "link");
+  
+  var arrow = svg.selectAll(".arrow")
+                 .data(force.links())
+                 .enter().append("symbol")
+                 .attr("type", "triangle-up")
+                 .attr("size", 20)
+                 .attr("class", "symbol")
+                 .attr("fill", "red");
+
+
   node.append("circle")
-      .attr("r", 5);
+      .attr("r", 10);
 
 
 /*  var tippath = "M" + 
@@ -258,19 +260,14 @@ function loadPage() {
                 .attr("visibility:", "hidden");*/
 
 
-
-
   d3.select("input[value=\"force\"]").on("click", force_layout);
-  d3.select("input[value=\"random\"]").on("click", random_layout);
-  d3.select("input[value=\"line\"]").on("click", line_layout);
-  d3.select("input[value=\"line_cat\"]").on("click", line_cat_layout);
   d3.select("input[value=\"radial\"]").on("click", radial_layout);
   d3.select("input[value=\"nocolor\"]").on("click", function() {
     d3.selectAll("circle").transition().duration(500).style("fill", "#66CC66");
   })
   d3.select("input[value=\"color_cat\"]").on("click", category_color);
   d3.select("input[value=\"nosize\"]").on("click", function() { 
-    d3.selectAll("circle").transition().duration(500).attr("r", 5);  })
+    d3.selectAll("circle").transition().duration(500).attr("r", 10);  })
   d3.select("input[value=\"size_cat\"]").on("click", category_size);
   d3.select("input[value=\"index\"]").on("click", index_layout);
   d3.select("input[value=\"time\"]").on("click", time_layout);
@@ -283,30 +280,6 @@ function loadPage() {
     force.nodes(graph.nodes)
         .links(graph.links)
         .start();
-  }
-
-  function random_layout() {
-    force.stop();
-    graph.nodes.forEach(function(d, i) {
-      d.x = width/4 + 2*width*Math.random()/4;
-      d.y = height/4 + 2*height*Math.random()/4;  
-    })
-    graph_update(500);
-  }
-
-  function line_layout() {
-    force.stop();
-    graph.nodes.forEach(function(d, i) { d.y = height/2; });
-    graph_update(500);
-  }
-
-  function line_cat_layout() {
-    force.stop();
-    graph.nodes.forEach(function(d, i) { 
-      d.x = width*(i + 2)/nb_nodes;
-      d.y = uScale(d.commit.author.name)/2 + height/4;  
-    });
-    graph_update(500);
   }
 
   function radial_layout() {
@@ -332,53 +305,57 @@ function loadPage() {
   function category_color() {
     d3.selectAll("circle").transition().duration(500)
     .style("fill", function(d){ 
-        return fill(d.branch.name); });
+        if (d != undefined) {return fill(d.branch.name); }
+        else {return "black";} });
   }
 
   function category_size() {
-    d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.branch.cat+1)*10); });
+    d3.selectAll("circle").transition().duration(500).attr("r", function(d) { return Math.sqrt((d.branch.name+1)*10); });
   }
+
   function time_layout() {
     force.stop();
     graph.nodes.forEach(function(d) {
       d.x = tScale(d.commit.committer.date) ;
+      d.y = uScale(d.commit.author.name)/2 + height/4;  
     });
     graph_update(500);
   }
   function index_layout() {
     force.stop();
-    graph.nodesforEach(function(d, i) {
+    graph.nodes.forEach(function(d, i) {
       d.x = iScale(i);
+      d.y = height/2;
     });
     graph_update(500);
   }
 
   function graph_update(delay) {
-/*    link.transition().duration(delay)
-        .attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });*/
 
-    link.transition().duration(delay)
-      .attr("d", function(d) {
-          var dx = d.target.x - d.source.x,
-              dy = d.target.y - d.source.y,
-              dr = Math.sqrt(dx * dx + dy * dy);
-          
-          return "M" + 
-              d.source.x + "," + 
-              d.source.y + "A" + 
-              dr + "," + dr + " 0 0,1 " + 
-              d.target.x + "," + 
-              d.target.y;
-    });
 
+
+  link.transition().duration(delay)
+      .attr("d", function(d) { return line([
+          {x: d.source.x, y: d.source.y}, 
+          {x: d.source.x, y: d.source.y+offset_y}, 
+          {x: d.target.x, y: d.target.y+offset_y}, 
+          {x: d.target.x, y: d.target.y}
+        ]) }
+      );
+
+  arrow.transition().duration(delay)
+    .attr("d", d3.svg.symbol())
+    .attr("transform", function(d) {
+      var slope = (d.target.y - d.source.y)/(d.target.x - d.source.x);
+      return "translate("+d.target.x+","+d.target.y+")"});
 
   node.transition().duration(delay)
       .attr("transform", function(d) { 
         return "translate("+d.x+","+d.y+")"; }); 
+  
+
   }
+
 }
 
 </script>

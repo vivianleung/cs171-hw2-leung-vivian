@@ -190,6 +190,8 @@
 </ol>
 <h3>Part 2</h3>
 
+
+
 Interaction allows the user to view details about commits they're interested in, and reduces clutter in the visualization. A static graph which included these essential commit details would be too cluttered. It would also be difficult to fit all the data into one static graph in an easily-navigatable way, especially for long-running projects that would have a very wide graph.
 
 If many new developers joined and pushed commits for the first time to the project, two things would happen. One, there would be many more rows added to the network graph (corresponding to each new user) and would make the graph very tall. Two, there would be many nodes in a concentrated period of time, which would visually make that corresponding part of the graph very crowded with nodes. To preseve the graph's readability, I would do a few things: (1) make the graph scrollable such that the header axis/legend would fix and allow for better visual alignment with nodes; (2) make users and/or commits filterable by number of commits of those users, or de-selectable by checkboxes, or (3) group these new commits together under one (or a few) nodes depending on their similarities, or the time of commit.
